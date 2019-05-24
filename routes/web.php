@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -20,5 +21,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/practice', 'PracticesController@practice');
+Route::post('/addPractice', 'PracticesController@addPractice');
+Route::get('/view/{id}', 'PracticesController@view');
+Route::get('/edit/{id}', 'PracticesController@edit');
+
+
 Route::get('/profile', 'ProfileController@profile');
+Route::post('/addProfile', 'ProfileController@addProfile');
+
 Route::get('/category', 'CategoryController@category');
+Route::post('/addCategory', 'CategoryController@addCategory');

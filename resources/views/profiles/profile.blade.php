@@ -5,10 +5,44 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Profile</div>
+                <div class="card-header">add Profile</div>
 
                 <div class="card-body">
-                    Profile
+                    <form method="POST" action="{{ url('/addProfile') }}" enctype="multipart/form-data">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="name" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="designation" class="col-md-4 col-form-label text-md-right">Enter Designation</label>
+
+                            <div class="col-md-6">
+                                <input id="designation" type="input" class="form-control" name="designation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="profile_pic" class="col-md-4 col-form-label text-md-right">Profile picture</label>
+
+                            <div class="col-md-6">
+                                <input id="profile_pic" type="file" class="form-control" name="profile_pic" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Add Profile
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
