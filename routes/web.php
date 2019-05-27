@@ -24,6 +24,8 @@ Route::get('/practice', 'PracticesController@practice');
 Route::post('/addPractice', 'PracticesController@addPractice');
 Route::get('/view/{id}', 'PracticesController@view');
 Route::get('/edit/{id}', 'PracticesController@edit');
+Route::post('/editPractice/{id}','PracticesController@editPractice');
+Route::get('/delete/{id}', 'PracticesController@delete');
 
 
 Route::get('/profile', 'ProfileController@profile');
