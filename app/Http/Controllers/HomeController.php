@@ -34,7 +34,7 @@ class HomeController extends Controller
                     ->select('users.*', 'profiles.*')
                     ->where(['profiles.user_id' => $user_id])
                     ->first();
-        $practices = Practice::all();
+        $practices = Practice::paginate(5);
         return view('home',['profile'=> $profile, 'practices' => $practices]);
     }
 }

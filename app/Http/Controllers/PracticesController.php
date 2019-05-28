@@ -6,12 +6,30 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\DB;
 use App\Category;
 use App\Practice;
+use App\Like;
+use App\Dislike;
+use App\Comment;
+use App\Profile;
 use Auth;
 
 class PracticesController extends Controller
 {
+
+    public function home()
+    {
+        $user_id = Auth::user()->id;
+        $profile = DB::table('users') 
+                    ->join('profiles', 'users.id', '=', 'profiles.user_id')
+                    ->select('users.*', 'profiles.*')
+                    ->where(['profiles.user_id' => $user_id])
+                    ->first();
+        $practices = Practice::paginate(5);
+        return view('practices.overviewpractices',['profile'=> $profile, 'practices' => $practices]);
+    }
+
     public function practice(){
         $categories = Category::all();
         return view('practices.practices', ['categories'=>$categories]);
@@ -45,8 +63,18 @@ class PracticesController extends Controller
 
     public function view($practice_id){
         $practices = Practice::where('id', '=' , $practice_id)->get();
+        $likePractice = Practice::find($practice_id);
+        $dislikePractice = Practice::find($practice_id);
+        $likeCtr = Like::where(['practice_id' => $likePractice->id])->count();
+        $dislikeCtr = Dislike::where(['practice_id' => $dislikePractice->id])->count();
         $categories = Category::all();
-        return view('practices.view', ['practices'=> $practices, 'categories'=>$categories]);
+        $comments = DB::table('users')
+            ->join('comments', 'users.id', '=' , 'comments.user_id')
+            ->join('practices','comments.practice_id', '=', 'practice_id')
+            ->select('users.name', 'comments.*')
+            ->where(['practices.id' => $practice_id])
+            ->get();
+        return view('practices.view', ['practices'=> $practices, 'categories'=>$categories, 'likeCtr' => $likeCtr , 'dislikeCtr' => $dislikeCtr, 'comments' => $comments]);
     }
 
     public function edit($practice_id){
@@ -94,5 +122,73 @@ class PracticesController extends Controller
         Practice::where('id', $practice_id)
         ->delete();
         return redirect('/home')->with('response', 'Practice deleted Successfully');
+    }
+
+    public function category($category_id){
+        $categories = Category::all();
+        $practices = DB::table('practices')
+            ->join('categories', 'practices.category_id', '=', 'categories.id')
+            ->select('practices.*','categories.*')
+            ->where(['categories.id' => $category_id])
+            ->get();
+        return view('categories.categoriespractices', ['categories'=>$categories, 'practices' => $practices]);
+    }
+
+    public function like($id){
+        $loggedin_user = Auth::user()->id;
+        $like_user = Like::where(['user_id'=>$loggedin_user, 'practice_id'=>$id])->first();
+        //check if user had already liked the post
+        if(empty($like_user->user_id)){
+            $user_id = Auth::user()->id;
+            $email = Auth::user()->email;
+            $practice_id = $id;
+            $like = new Like;
+            $like->user_id = $user_id;
+            $like->email = $email;
+            $like->practice_id = $practice_id;
+            $like->save();
+            return redirect("/view/{$id}]");
+        } else{
+            return redirect("/view/{$id}]");
+        }
+    }
+
+    public function dislike($id){
+        $loggedin_user = Auth::user()->id;
+        $dislike_user = Like::where(['user_id'=>$loggedin_user, 'practice_id'=>$id])->first();
+        //check if user had already liked the post
+        if(empty($dislikes_user->user_id)){
+            $user_id = Auth::user()->id;
+            $email = Auth::user()->email;
+            $practice_id = $id;
+            $dislikes = new Dislike;
+            $dislikes->user_id = $user_id;
+            $dislikes->email = $email;
+            $dislikes->practice_id = $practice_id;
+            $dislikes->save();
+            return redirect("/view/{$id}]");
+        } else{
+            return redirect("/view/{$id}]");
+        }
+    }
+
+    public function comment(Request $request, $practice_id){
+        $this->validate($request, [
+            'comment' => 'required'
+        ]);
+        $comment = new Comment;
+        $comment->user_id = Auth::user()->id;
+        $comment->practice_id = $practice_id;
+        $comment->comment = $request->input('comment');
+        $comment->save();
+        return redirect("/view/{$practice_id}]")->with('response', 'Comment Added Successfully');
+    }
+
+    public function search(Request $request){
+        $user_id = Auth::user()->id;
+        $profile = Profile::find($user_id);
+        $keywords = $request->input('search');
+        $practices = Practice::where('practice_title', 'LIKE' , '%' .$keywords. '%')->get();
+        return view('practices.searchpractices', ['profile' => $profile, 'practices' => $practices]);
     }
 }

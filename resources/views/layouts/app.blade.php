@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    Beste Practices
+                    Start Your Life
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                    
                         <li class="nav-item"><a href="{{url('/home')}}" class="nav-link">Home</a></li>
+                    @guest 
+
+                    @else
+                        <li class="nav-item"><a href="{{url('/practicesoverview')}}" class="nav-link">Best Practices</a></li>
                         <li class="nav-item"><a href="{{url('/practice')}}" class="nav-link">Add Best Practice</a></li>
+                    @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
