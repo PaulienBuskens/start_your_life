@@ -16,6 +16,39 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/wonen', function(){
+    return view('subjects.wonen');
+});
+
+Route::get('/verzekeringen', function(){
+    return view('subjects.verzekeringen');
+});
+
+Route::get('/belastingen', function(){
+    return view('subjects.belastingen');
+});
+
+Route::get('/vervoer', function(){
+    return view('subjects.vervoer');
+});
+
+Route::get('/hobby', function(){
+    return view('subjects.hobby');
+});
+
+Route::get('/huishouden', function(){
+    return view('subjects.huishouden');
+});
+
+Route::get('/gezondheid', function(){
+    return view('subjects.gezondheid');
+});
+
+Route::get('/onderhoud', function(){
+    return view('subjects.onderhoud');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
