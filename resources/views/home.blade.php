@@ -79,10 +79,10 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="/onderhoud">
+                        <a href="/nutsvoorzieningen">
                             <div class="box">
                                 <img src="{{ asset('images/icons/maintenance.png')}}" alt="maintenance icon">
-                                <p class="subtext">onderhoud</p>
+                                <p class="subtext">nutsvoorzieningen</p>
                             </div>
                         </a>
                     </div>

@@ -34,12 +34,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    
+                        <li class="nav-item"><a href="{{url('/practicesoverview')}}" class="nav-link">Best Practices</a></li>
                       <!--  <li class="nav-item"><a href="{{url('/home')}}" class="nav-link">Home</a></li> -->
                     @guest 
 
                     @else
-                        <li class="nav-item"><a href="{{url('/practicesoverview')}}" class="nav-link">Best Practices</a></li>
+                        
                         <li class="nav-item"><a href="{{url('/practice')}}" class="nav-link">Add Best Practice</a></li>
                     @endguest
                     </ul>

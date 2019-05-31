@@ -44,8 +44,8 @@ Route::get('/gezondheid', function(){
     return view('subjects.gezondheid');
 });
 
-Route::get('/onderhoud', function(){
-    return view('subjects.onderhoud');
+Route::get('/nutsvoorzieningen', function(){
+    return view('subjects.nutsvoorzieningen');
 });
 
 
