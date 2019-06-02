@@ -12,8 +12,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
     return view('home');
+});
+
+Route::get('/onderwerpen', function () {
+    return view('onderwerpen');
 });
 
 Route::get('/wonen', function(){

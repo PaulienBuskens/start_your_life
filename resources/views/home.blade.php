@@ -1,17 +1,4 @@
 @extends('layouts.app')
-<style type="text/css">
-
-    .avatar{
-        border-radius: 100%;
-        width: 100px;
-        height:100px;
-    }
-
-    .img{
-        max-width: 250px;
-    }
-
-</style>
 
 @section('content')
 <div class="container">
@@ -19,70 +6,42 @@
        <div class="col-md-12 col-md-offset-2">
             <div class="text-center">
                 <h1>Start your life</h1>
-                <div class="row">
-                    <div class="col-md-3">
-                    <a href="/wonen">
-                        <div class="box">
-                            <img src="{{ asset('images/wonen/Rent-Sale.png')}}" alt="house icon">
-                            <p class="subtext">kopen of huren</p>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="/verzekeringen">
-                            <div class="box2">
-                                <img src="{{ asset('images/verzekeringen/insurance.png')}}" alt="insurance icon">
-                                <p class="subtext">verzekeringen</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="/belastingen">
-                            <div class="box">
-                                <img src="{{ asset('images/icons/taxes.png')}}" alt="taxes icon">   
-                                <p class="subtext">belastingen</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="/vervoer">
-                            <div class="box2">
-                                <img src="{{ asset('images/icons/vervoer.png')}}" alt="vervoer icon">
-                                <p class="subtext">vervoer</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="intro">
+                    <p>Bij start your life vind je alles over het zelfstandig gaan wonen. 
+                    <br> Je kan per onderwerp informatie verkrijgen of ervaringen delen met andere.
+                    <br> Verder kan je locatie gebasseerde informatie verkrijgen over bv de winkels in je buurt.
+                    <br>Ten slotte heb je een handige checklist zodat je niets kan vergeten.</p>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="/hobby">
-                            <div class="box2">
-                                <img src="{{ asset('images/icons/hobby.png')}}" alt="hobby icon">
-                                <p class="subtext">Hobby's</p>
+                        <a href="/onderwerpen">
+                            <div class="option">
+                                <img src="{{ asset('images/home/onderdelen.png')}}" alt="">
+                                <p class="">Informatie per onderwerp</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="/huishouden">
-                            <div class="box">
-                                <img src="{{ asset('images/icons/chores.png')}}" alt="chores icon">
-                                <p class="subtext">huishouden</p>
+                        <a href="/practicesoverview">
+                            <div class="option2">
+                                <img src="{{ asset('images/home/ervaringen.png')}}" alt="">
+                                <p class="">Deel ervaringen</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="/gezondheid">
-                            <div class="box2">
-                                <img src="{{ asset('images/icons/health.png')}}" alt="healt icon">
-                                <p class="subtext">gezondheid</p>
+                        <a href="/practicesoverview">
+                            <div class="option">
+                                <img src="{{ asset('images/home/location.png')}}" alt="">
+                                <p class="">Locatie gebasseerde informatie</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="/nutsvoorzieningen">
-                            <div class="box">
-                                <img src="{{ asset('images/icons/maintenance.png')}}" alt="maintenance icon">
-                                <p class="subtext">nutsvoorzieningen</p>
+                        <a href="/practicesoverview">
+                            <div class="option2">
+                                <img src="{{ asset('images/home/checklist.png')}}" alt="">
+                                <p class="">Checklist</p>
                             </div>
                         </a>
                     </div>

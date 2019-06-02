@@ -36,7 +36,42 @@ body{
     background-color: var(--background-color);
 }
 
-/********** HOMEPAGE **********/
+/********** HOME **********/
+
+.intro{
+  font-size: 20px;
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+.option, .option2{
+  width: 100%;
+  height: 96%;
+  border-radius:10px;
+  margin:auto;
+  background-color:var(--bg-1);
+}
+
+.option2{
+  background-color:var(--bg-2);
+}
+
+.option img, .option2 img{
+  width: 150px;
+  height: 150px;
+  margin-top:30px;
+}
+
+.option p, .option2 p{
+  color:white;
+  font-size:25px;
+  margin-top:5%;
+}
+
+/********** ONDERWERPEN **********/
 
 .box, .box2{
     width: 100%;
