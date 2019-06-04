@@ -1,51 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Edit Profile</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ url('/addProfile') }}" enctype="multipart/form-data">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="name" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="designation" class="col-md-4 col-form-label text-md-right">Enter Nickname</label>
-
-                            <div class="col-md-6">
-                                <input id="designation" type="input" class="form-control" name="designation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="profile_pic" class="col-md-4 col-form-label text-md-right">Profile picture</label>
-
-                            <div class="col-md-6">
-                                <input id="profile_pic" type="file" class="form-control" name="profile_pic" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    Edit Profile
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <h1>Profiel</h1>
+    <div class="form">
+        <form method="POST" action="{{ url('/addProfile') }}" enctype="multipart/form-data">
+        @csrf
+            <div class="email__form">
+                <label for="name">Naam</label>
+                <input id="name" type="name" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+            </div>     
+            <div class="email__form">
+                <label for="designation" class="col-md-4 col-form-label text-md-right">Gebruikersnaam</label>
+                <input id="designation" type="input" name="designation" required>
+            </div>   
+            <div class="foto__form">
+                <label for="profile_pic" >Profiel foto</label>
+                <input id="profile_pic" type="file" name="profile_pic" required>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="btn__form">
+                <button type="submit">Edit Profile</button>
+            </div>
+        </form>
+    </div>       
 @endsection

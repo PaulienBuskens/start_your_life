@@ -191,4 +191,9 @@ class PracticesController extends Controller
         $practices = Practice::where('practice_title', 'LIKE' , '%' .$keywords. '%')->get();
         return view('practices.searchpractices', ['profile' => $profile, 'practices' => $practices]);
     }
+
+    public function categorien(){
+        $categories = Category::all();
+        return view('categories.categorien', ['categories'=>$categories]);
+    }
 }

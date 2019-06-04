@@ -13,10 +13,20 @@
 <body>
     <div>
         <nav>
-            
+            <div class="profile">
+                <a href="/profile">
+                    <img src="{{ asset('images/rebrand/profile.png')}}" alt="profiel">
+                </a>
+            </div>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>
