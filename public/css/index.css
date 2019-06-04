@@ -1,10 +1,12 @@
 
 /********** COLORS **********/
 :root{
-    --background-color:#F9F7F1;
-    --title: #70B83B;
-    --bg-1: #70B83B;
-    --bg-2: #C32868;
+    --background-color:#48465D;
+    --title: #A89D5D;
+    --color-1: #F7CD54;
+    --color-2: #71C1E9;
+    --color-3: #F26659;
+    --color-4: #7B7FCB;
 }
 
 /********** FONTS **********/
@@ -19,267 +21,109 @@
     src: url(../fonts/Comfortaa-Bold.ttf);
 }
 
+@font-face{
+    font-family: SmallTitles;
+    src: url(../fonts/Comfortaa-Light.ttf);
+}
+
+/********** GENERAL **********/
 
 h1{
     font-family: LargeTitles;
     color: var(--title);
     font-size: 80px;
+    text-align: center;
 }
 
 h2{
     color: var(--title);
-    font-size: 60px;
+    font-size: 50px;
     font-family: MediumTitles;
+}
+
+p{
+    font-family: SmallTitles;
 }
 
 body{
     background-color: var(--background-color);
+    margin:0;
+}
+
+footer{
+    background-image: url(../images/rebrand/footer.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 250px;
+    bottom:0;
+    right:0;
+    left:0;
 }
 
 /********** HOME **********/
 
-.intro{
-  font-size: 20px;
+.left__home{
+    float: left;
+    padding-left:100px;
+    width: 44%;
+    display: inline-block;
 }
 
-
-a:hover{
-  text-decoration: none;
+.left__home p{
+    color:var(--color-3);
+    font-size: 30px;
+    width: 60%;
 }
 
-.option, .option2{
-  width: 100%;
-  height: 96%;
-  border-radius:10px;
-  margin:auto;
-  background-color:var(--bg-1);
+.left__home a{
+    font-family: SmallTitles;
+    text-decoration: none;
+    color: var(--color-4);
 }
 
-.option2{
-  background-color:var(--bg-2);
+.left__home .rndbtn__home{
+    background-color: var(--color-1);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgb(61, 61, 61);
 }
 
-.option img, .option2 img{
-  width: 150px;
-  height: 150px;
-  margin-top:30px;
+.left__home .rndbtn__home p{
+    color:var(--color-4);
+    font-size:20px;
+    text-align: center;
+    padding-left:17px;
+    padding-top:40px;
+    width: 80%;
 }
 
-.option p, .option2 p{
-  color:white;
-  font-size:25px;
-  margin-top:5%;
+.right__home{
+    width: 49%;
+    display: inline-block;
 }
 
-/********** ONDERWERPEN **********/
-
-.box, .box2{
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    margin:auto;
-    background-color:var(--bg-1);
-    margin-bottom: 70px;
+.right__home img{
+    width: 40%;
+    display: block;
 }
 
-.box2{
-    background-color:var(--bg-2);
+.right__home input{
+    width: 400px;
+    height: 52px;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin-right:1%;
 }
 
-.box img, .box2 img{
-    width: 120px;
-    height: 120px;
-    margin-top: 6%;
-}
-
-.subtext{
-    position: absolute;
-    left: 5.4%;
-    right: 4.8%;
-    top: 57.54%;
-    bottom: 3.36%;
-    font-size: 20px;
+.right__home a{
+    background-color: var(--color-4);
+    font-size:25px;
+    text-decoration: none;
     color:white;
-    background-color:rgba(196, 196, 196, 0.50);
-    height: 17%;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.blok{
-    width: 49%;
-    text-align: left;
-    display: inline-block;
-}
-
-.blokimg{
-    width: 49%;
-    display: inline-block;
-}
-
-.blok2{
-    width: 49%;
-    text-align: right;
-    display: inline-block;
-}
-
-.blokimg2{
-    width: 49%;
-    display: inline-block;
-}
-
-.blokimg img, .blokimg2 img{
-    max-height: 300px;
-}
-
-/********** OVERVIEW ERVARINGEN **********/
-
-.profile__ervaringen{
-  border-right: 1px solid lightgray;
+    padding:2%;
+    border-radius:10px;
+    font-family: SmallTitles
 }
 
 
-.ervaring{
-  margin-bottom: 5%;
-}
-
-.ervaring h4{
-  color: var(--bg-1);
-  font-size: 30px;
-}
-
-.ervaring img{
-  border-radius:10px;
-}
-
-.ervaring p{
-  max-width: 60%;
-  margin: auto auto;
-}
-
-.opties__ervaringen{
-  max-width: 60%;
-  margin:auto auto;
-}
-
-.opties__ervaringen ul{
-  list-style: none;
-  padding-left:0;
-}
-
-.opties__ervaringen li{
-  display: inline;
-}
-
-.opties__ervaringen a{
-  color: var(--bg-2);
-}
-
-.ervaring cite{
-  color:gray;
-  font-size:10px;
-}
-
-/********** VIEW ERVARINGEN **********/
-
-.categorie{
-  background: none;
-}
-
-.categorie:hover{
-  background: var(--bg-1);
-}
-
-.categorie a{
-  color:var(--bg-2);
-}
-
-.view h4{
-    color:var(--bg-1);
-    font-size:40px;
-}
-
-.view img{
-  border-radius: 10px;
-  margin-bottom:2%;
-}
-
-.view p{
-  width: 80%;
-  margin: auto auto;
-  margin-bottom: 2%;
-}
-
-.button{
-  background: var(--bg-1);
-  color:white;
-}
-
-/********** CHECKLIST **********/
-
-.checklist{
-  text-align: left;
-  font-size:30px;
-}
-
-.item {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 30px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default radio button */
-.item input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.item:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.item input:checked ~ .checkmark {
-  background-color: var(--bg-2);
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.item input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.item .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
-}
