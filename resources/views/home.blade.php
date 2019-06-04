@@ -38,7 +38,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="/practicesoverview">
+                        <a href="/checklist">
                             <div class="option2">
                                 <img src="{{ asset('images/home/checklist.png')}}" alt="">
                                 <p class="">Checklist</p>

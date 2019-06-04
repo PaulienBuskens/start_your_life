@@ -6,7 +6,10 @@
     <div class="row justify-content-center">
        <div class="col-md-12 col-md-offset-2">
             <div class="text-center">
-                <h1>Start your life</h1>
+                <h1>Onderwerpen</h1>
+                <div class="intro">
+                    <p>Hier vind je informatie onderverdeeld in 8 grote thema's. <br> Die de stap naar het zelfstandig wonen weer iets kleiner maakt.</p>
+                </div>
                 <div class="row">
                     <div class="col-md-3">
                     <a href="/wonen">

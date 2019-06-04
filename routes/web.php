@@ -52,6 +52,14 @@ Route::get('/nutsvoorzieningen', function(){
     return view('subjects.nutsvoorzieningen');
 });
 
+Route::get('/checklist', function(){
+    return view('checklist.checklist');
+});
+
+
+Route::post('/checklist/add', 'ChecklistController@post')->name('post');
+//Route::get('/Checklist/{id}', 'ChecklistController@edit')->name('edit');
+
 
 Auth::routes();
 
