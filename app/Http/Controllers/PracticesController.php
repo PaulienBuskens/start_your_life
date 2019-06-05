@@ -167,7 +167,7 @@ class PracticesController extends Controller
         $user_id = Auth::user()->id;
         $profile = Profile::find($user_id);
         $keywords = $request->input('search');
-        $practices = Practice::where('practice_title', 'LIKE' , '%' .$keywords. '%')->get();
+        $practices = Practice::where('practice_body', 'LIKE' , '%' .$keywords. '%')->get();
         return view('practices.searchpractices', ['profile' => $profile, 'practices' => $practices]);
     }
 

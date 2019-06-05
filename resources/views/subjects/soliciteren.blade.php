@@ -24,19 +24,31 @@
         <h1>Soliciteren</h1>
         <div class="blok__onderwerp">
             <h3>Voorbereiding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
-                at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
-                ante odio viverra sapien, at lobortis ligua dolor vitea nulla.
-            </p>
+            <p>Je kan je op verschillende manieren voorbereiden op een sollicitatie, hier vindt je enkele van de voornaamste. </p>
+            <h4>Enkele standaard vragen</h4>
+            <ul>
+                <li>Wat zijn je sterktes en zwaktes?</li>
+                <li>Waar zie je jezelf in 5 jaar?</li>
+                <li>Wat motiveert jou?</li>
+                <li>Wat zijn je hobby's</li>
+                <li>Heb jij nog vragen voor ons?</li>
+                <li>Hoe zou iemand in je dichte omgeving jou omschrijven?</li>
+            </ul>
+            <h4>Informatie opzoeken over het bedrijf</h4>
+            <p>Het is altijd goed om vooraf informatie op te zoeken over het bedrijf zoals vorige projecten, wie is de CEO, waarom wil ik hier komen werken, ligging,...</p>
+           
         </div>
         <div class="blok__onderwerp">
             <h3>Gesprek zelf</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
-                at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
-                ante odio viverra sapien, at lobortis ligua dolor vitea nulla.
-            </p>
+            <ul>
+                <li>Zie dat je zeker op tijd komt, minstens 10 min voor je afspraak.</li>
+                <li>Wees beleefd en vriendelijk tegen iedereen die je tegenkomt.</li>
+                <li>Blijf jezelf.</li>
+                <li>Zie dat je niet ligt te spelen met een pen of papier en zit rechtop.</li>
+                <li>Stel zelf ook vragen.</li>
+            </ul>
+            
+            
         </div>           
     </div>
 @endsection
