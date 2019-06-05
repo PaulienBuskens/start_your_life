@@ -14,7 +14,7 @@ class CreatePracticesTable extends Migration
     public function up()
     {
         Schema::create('practices', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('practices_id');
             $table->integer('user_id');
             $table->string('practice_title');
             $table->text('practice_body');

@@ -65,13 +65,13 @@ Route::group(['middleware' => ['auth']],function(){
     Route::get('/practicesoverview', 'PracticesController@home');
     Route::get('/practice', 'PracticesController@practice');
     Route::post('/addPractice', 'PracticesController@addPractice');
-    Route::get('/view/{id}', 'PracticesController@view');
+    Route::get('/view/{practice_id}', 'PracticesController@view');
     Route::get('/edit/{id}', 'PracticesController@edit');
     Route::post('/editPractice/{id}','PracticesController@editPractice');
     Route::get('/delete/{id}', 'PracticesController@delete');
     Route::get('/like/{id}', 'PracticesController@like');
     Route::get('/dislike/{id}', 'PracticesController@dislike');
-    Route::post('/comment/{id}', 'PracticesController@comment');
+    Route::post('/comment/{practice_id}', 'PracticesController@comment');
     Route::post('search', 'PracticesController@search');
 
     Route::get('/profile', 'ProfileController@profile');

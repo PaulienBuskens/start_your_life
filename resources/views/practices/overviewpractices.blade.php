@@ -1,17 +1,4 @@
 @extends('layouts.app')
-<style type="text/css">
-
-    .avatar{
-        border-radius: 100%;
-        width: 100px;
-        height:100px;
-    }
-
-    .img{
-        max-width: 250px;
-    }
-
-</style>
 
 @section('content')
 <div class="container">

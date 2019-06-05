@@ -1,96 +1,65 @@
 @extends('layouts.app')
-<style type="text/css">
-
-    .img{
-        max-width: 250px;
-    }
-
-</style>
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12 col-md-offset-2">
-            @if(session('response'))
-                <div class="alert alert-success">{{session('response')}}</div>
-            @endif
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-md-2">
-                      <ul class="list-group">
-                            @if(count($categories) > 0)
-                                @foreach($categories->all() as $category)
-                                    <li class="list-group-item categorie">
-                                        <a href='{{ url("category/{$category->id}") }}'>{{$category->categoty}}</a>
-                                    </li>
-                                @endforeach
-                            @else
-                                <p>No Category Found</p>
-                            @endif
-
-                            <a href=''></a>
-                      </ul>
-                    
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-8">
-                    @if(count($practices) > 0)
-                            @foreach($practices->all() as $practice)
-                            <div class="view">
-                                <h4>{{$practice->practice_title}}</h4>
-                                <img src="{{ $practice->practice_image}}" alt="" class="img">
-                                <p>{{$practice->practice_body}}</p>
-                                <div class="opties__ervaringen">
-                                    <ul>
-                                        <li role="presentation">
-                                            <a href='{{ url("/like/{$practice->id}")}}'>
-                                                <span>Like ({{$likeCtr}})</span> |
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href='{{ url("/dislike/{$practice->id}")}}'>
-                                                <span>Dislike ({{$dislikeCtr}})</span> |
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href='{{ url("/comment/{$practice->id}")}}'>
-                                                <span>COMMENT</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            @endforeach
-                        @else
-                            <p>No best practices available</p>
-                        @endif
-                      
-                        <form method="POST" action='{{ url("/comment/{$practice->id}") }}'>
-                        {{csrf_field()}}
-                            <div class="form-group">
-                                <textarea name="comment" id="comment" rows="6" class="form-control" required autofocus></textarea>
-                                <br>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-lg button"> POST COMMENT</button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <h3>Comments</h3>
-
-                        @if(count($comments) > 0 )
-                            @foreach($comments->all() as $comment)
-                                <p>{{ $comment->comment }}</p>
-                                <p>Posted by: {{ $comment->name }}</p>
-                                <hr>
-                            @endforeach
-                        @else
-                            <p>No best practices available</p>
-                        @endif
-                    </div>
-                    </div>
-                </div>
-       </div>
+    @if(session('response'))
+        <div class="alert alert-success">{{session('response')}}</div>
+    @endif
+    
+    <div class="sidenav">
+        <a href="/">
+            <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
+        </a>
+        <ul>
+            <a href="/practice">
+                <li>Post Vraag</li>
+            </a>
+            <a href="/onderwerpen">
+                <li>Info per categorie</li>
+            </a>
+            <a href="/categorien">
+                <li>Vragen per categorie</li>
+            </a>
+            <a href="/categorien">
+                <li>Help andere</li>
+            </a>
+        </ul>
     </div>
-</div>
+    <div class="views">
+        <h1>Bekijk vraag</h1>
+        @if(count($practices) > 0)
+            @foreach($practices->all() as $practice)
+                <div class="view">
+                    <h3>{{$practice->practice_title}}</h3>
+                    <p>{{$practice->practice_body}}</p>
+                </div>
+            @endforeach
+        @else
+            <p>No best practices available</p>
+        @endif
+
+        <div class="comment__form">
+            <form method="POST" action='{{ url("/comment/{$practice->practices_id}") }}'>
+            {{csrf_field()}}
+                <textarea name="comment" id="comment" cols="50" rows="3" required autofocus></textarea>
+                <div class="btn__form">
+                    <button type="submit">Add Comment</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="comments">
+            <h3>Comments</h3>
+
+            @if(count($comments) > 0)
+                @foreach($comments->all() as $comment)
+                    <div class="comment">
+                        <p>{{ $comment->comment }}</p>
+                        <p>Posted by: {{ $comment->name }}</p>
+                    </div>
+                @endforeach
+            @else 
+                <p>Geen antwoorden gevonden</p>
+            @endif
+        </div>
+    </div>
 @endsection

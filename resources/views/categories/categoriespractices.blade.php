@@ -1,44 +1,46 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Categorie</h1>
     <div class="sidenav">
         <a href="/">
             <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
         </a>
         <ul>
-            <a href="#">
+            <a href="/practice">
                 <li>Post Vraag</li>
             </a>
-            <a href="#">
+            <a href="/onderwerpen">
                 <li>Info per categorie</li>
             </a>
-            <a href="#">
+            <a href="/categorien">
                 <li>Vragen per categorie</li>
             </a>
-            <a href="#">
+            <a href="/categorien">
                 <li>Help andere</li>
             </a>
         </ul>
     </div>
-    <div class="categorie">
+    <div class="vragen__categorie">
+        
+        <h1>Categorie</h1>
         @if(count($practices) > 0)
             @foreach($practices->all() as $practice)
-                <h3>{{$practice->practice_title}}</h3>
-                <p>{{$practice->practice_body}}</p>  
+                <div class="vraag__categorie">
+                    <h3>{{$practice->practice_title}}</h3>
+                    <p>{{$practice->practice_body}}</p>  
                 
-                <div class="opties__vragen">
-                    <ul>
-                        <li role="presentation">
-                            <a href='{{ url("/view/{$practice->id}")}}'> 
-                                <span>Zie antwoorden</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="opties__vragen">
+                        <ul>
+                            <li role="presentation">
+                                <a href='{{ url("/view/{$practice->practices_id}")}}'> 
+                                    <span>Zie antwoorden</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <cite> Posted on: {{date('M j, Y H:i', strtotime($practice->updated_at))}}</cite>
-                                    
+                    <cite> Posted on: {{date('M j, Y H:i', strtotime($practice->updated_at))}}</cite>
+                </div>              
              @endforeach
         @else
             <p>No best practices available</p>

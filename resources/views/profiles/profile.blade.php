@@ -1,6 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="sidenav">
+        <a href="/">
+            <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
+        </a>
+        <ul>
+            <a href="/practice">
+                <li>Post Vraag</li>
+            </a>
+            <a href="/onderwerpen">
+                <li>Info per categorie</li>
+            </a>
+            <a href="/categorien">
+                <li>Vragen per categorie</li>
+            </a>
+            <a href="/categorien">
+                <li>Help andere</li>
+            </a>
+        </ul>
+    </div>
     <h1>Profiel</h1>
     <div class="form">
         <form method="POST" action="{{ url('/addProfile') }}" enctype="multipart/form-data">

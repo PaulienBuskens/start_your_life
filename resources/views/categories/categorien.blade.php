@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h1>Vragen per categorie</h1>
+
+<h1>Vragen per categorie</h1>   
     <div class="sidenav">
         <a href="/">
             <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
@@ -11,18 +11,19 @@
             <a href="#">
                 <li>Post Vraag</li>
             </a>
-            <a href="#">
+            <a href="/onderwerpen">
                 <li>Info per categorie</li>
             </a>
-            <a href="#">
+            <a href="/categorien">
                 <li>Vragen per categorie</li>
             </a>
-            <a href="#">
+            <a href="/categorien">
                 <li>Help andere</li>
             </a>
         </ul>
     </div>
     <div class="categorien">
+        
         <ul>
             @if(count($categories) > 0)
                 @foreach($categories->all() as $category)
@@ -35,5 +36,4 @@
             @endif
         </ul>
     </div>
-</div>
 @endsection

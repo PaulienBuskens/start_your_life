@@ -41,8 +41,21 @@ h2{
     font-family: MediumTitles;
 }
 
+h3{
+    font-family: MediumTitles;
+    font-size:40px;
+    color:var(--color-3);
+    margin-top:0;
+}
+
 p{
     font-family: SmallTitles;
+}
+
+a{
+    font-family: Smalltitles;
+    text-decoration: none;
+    color:black;
 }
 
 body{
@@ -54,6 +67,7 @@ footer{
     background-image: url(../images/rebrand/footer.png);
     background-position: bottom;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 250px;
     bottom:0;
     right:0;
@@ -76,6 +90,7 @@ footer{
 .sidenav{
     width: 20%;
     display:inline-block;
+    float:left;
 }
 
 .sidenav img{
@@ -221,6 +236,13 @@ footer{
     margin-top:12%;
 }
 
+.btn-lg button{
+    width: 300px;
+    font-size:24px;
+    padding: 4%;
+}
+
+
 /********** CATEGORIEN **********/
 
 .categorien{
@@ -235,7 +257,7 @@ footer{
 .categorien a{
     color:black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .categorien li{
@@ -250,16 +272,141 @@ footer{
 
 .categorien li p{
     margin-top:47%;
-    font-family: MediumTitles;
+    font-family: SmallTitles;
     text-align: center;
 }
 
 /********** CATEGORIE **********/
 
-.categorie{
-    width: 50%;
+.vragen__categorie{
+    width: 70%;
     display: inline-block;
-    float: right;
-    margin-right: 300px;
+    margin: auto auto;
 }
 
+.vraag__categorie{
+    width: 80%;
+    background-color:var(--color-1);
+    border-radius: 10px;
+    text-align: center;
+    padding:2%;
+    margin:auto auto;
+    margin-bottom: 3%;
+}
+
+.vraag__categorie h3{
+    font-family: MediumTitles;
+}
+
+.vraag__categorie ul{
+    list-style-type: none;
+}
+
+.vraag__categorie a{
+    text-decoration: none;
+    color:black;
+    background-color:var(--color-2);
+    padding:1%;
+    border-radius: 10px;
+}
+
+/********** VIEW **********/
+
+.views{
+    width: 70%;
+    display:inline-block;
+}
+
+.view{
+    background-color:var(--color-1);
+    margin:auto auto;
+    width: 70%;
+    padding:2%;
+    margin-bottom:3%;
+    border-radius: 10px;
+}
+
+.view p{
+    font-size: 25px;
+}
+
+.comment__form{
+    width: 74%;
+    margin:auto auto;
+}
+
+.comment__form textarea{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.comment__form .btn__form{
+    display: inline;
+}
+
+.comment__form .btn__form button{
+    float:right;
+    margin-right: 200px;
+    background-color: var(--color-2);
+    border:none;
+    padding: 2%;
+    border-radius:10px;
+    font-size:20px;
+    font-family: SmallTitles;
+}
+
+.comments{
+    width: 74%;
+    margin: auto auto;
+    margin-top: 2%;
+}
+
+.comment{
+    background-color:var(--color-2);
+    width: 50%;
+    padding:1%;
+    margin-bottom:1%;
+    border-radius:10px;
+}
+
+.comment p:nth-child(2){
+    font-size:10px;
+}
+
+/********** ONDERWERPEN **********/
+
+.onderwerpen{
+    width: 79%;
+    margin:auto auto;
+}
+
+.onderwerp{
+    background-color:var(--color-1);
+    width: 220px;
+    height: 220px;
+    border-radius:100%;
+    display:inline-block;
+    margin-left:3%;
+    margin-bottom:3%;
+}
+
+.onderwerp p{
+    font-size: 20px;
+    text-align: center;
+    margin-top:47%;
+}
+
+/********** ONDERWERP **********/
+
+.onderwerp__onderwerp{
+    width: 60%;
+    margin:auto auto;
+}
+
+.blok__onderwerp{
+    background-color:var(--color-1);
+    padding:2%;
+    border-radius: 10px;
+    margin-bottom:2%;
+}
