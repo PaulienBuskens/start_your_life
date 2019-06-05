@@ -24,12 +24,10 @@
                         <div class="col-md-6">
                             <form method="POST" action='{{ url("/search") }}'>
                                 {{ csrf_field() }}
-                                <div class="input-group">
                                     <input type="text" name="search" class="form-control" placeholder="Search for ...">
                                     <span class="input-group-btn">
                                         <button type="submit" class="btn btn-default">Search</button>
                                     </span>
-                                </div>
                             </form>
                         </div>
                     </div>

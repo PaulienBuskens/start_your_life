@@ -14,8 +14,13 @@
    </div>
    <div class="right__home">
       <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
-      <input type="text" name="search" id="search">
-      <a href="#">VRAAG</a>
+      <form method="POST" action='{{ url("/search") }}'>
+      {{ csrf_field() }}
+         <input type="text" name="search" placeholder="Search for ...">
+            <span class="input-group-btn">
+               <button type="submit" class="btn__form">VRAAG</button>
+            </span>
+      </form>
    </div>
 </div>
 @endsection
