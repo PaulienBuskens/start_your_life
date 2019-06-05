@@ -8,7 +8,7 @@
             <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
         </a>
         <ul>
-            <a href="#">
+            <a href="/practice">
                 <li>Post Vraag</li>
             </a>
             <a href="/onderwerpen">
