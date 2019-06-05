@@ -23,8 +23,8 @@
     <div class="onderwerpen">
         <h1>Onderwerpen</h1>
         <div class="onderwerp">
-            <a href="/verzekeringen">
-                <p>Verzekeringen</p>
+            <a href="/finacien">
+                <p>Financiën</p>
             </a>
         </div>
         <div class="onderwerp">
@@ -33,13 +33,13 @@
             </a>
         </div>
         <div class="onderwerp">
-            <a href="/belastingen">
-                <p>belastingen</p>
+            <a href="/soliciteren">
+                <p>Soliciteren</p>
             </a>
         </div>
         <div class="onderwerp">
             <a href="/vervoer">
-                <p>vervoer</p>
+                <p>Vervoer</p>
             </a>
         </div>
         <div class="onderwerp">

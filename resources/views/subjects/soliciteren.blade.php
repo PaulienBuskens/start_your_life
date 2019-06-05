@@ -21,9 +21,9 @@
         </ul>
     </div>
     <div class="onderwerp__onderwerp">
-        <h1>Belastingen</h1>
+        <h1>Soliciteren</h1>
         <div class="blok__onderwerp">
-            <h3>Zelf invullen</h3>
+            <h3>Voorbereiding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
                 at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
@@ -31,7 +31,7 @@
             </p>
         </div>
         <div class="blok__onderwerp">
-            <h3>Accountent inhuren</h3>
+            <h3>Gesprek zelf</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
                 at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,

@@ -24,12 +24,12 @@ Route::get('/wonen', function(){
     return view('subjects.wonen');
 });
 
-Route::get('/verzekeringen', function(){
-    return view('subjects.verzekeringen');
+Route::get('/soliciteren', function(){
+    return view('subjects.soliciteren');
 });
 
-Route::get('/belastingen', function(){
-    return view('subjects.belastingen');
+Route::get('/finacien', function(){
+    return view('subjects.financien');
 });
 
 Route::get('/vervoer', function(){

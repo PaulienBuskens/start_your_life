@@ -152,6 +152,8 @@ footer{
     height: 150px;
     border-radius: 100%;
     box-shadow: 3px 3px 3px rgb(61, 61, 61);
+    display: inline-block;
+    margin-right: 3%;
 }
 
 .left__home .rndbtn__home p{
@@ -159,7 +161,7 @@ footer{
     font-size:20px;
     text-align: center;
     padding-left:17px;
-    padding-top:40px;
+    padding-top:20px;
     width: 80%;
 }
 

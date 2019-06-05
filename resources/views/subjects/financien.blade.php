@@ -21,9 +21,9 @@
         </ul>
     </div>
     <div class="onderwerp__onderwerp">
-        <h1>Verzekeringen</h1>
+        <h1>Financien</h1>
         <div class="blok__onderwerp">
-            <h3>Brand verzekering</h3>
+            <h3>Verzekeringen</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
                 at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
@@ -31,7 +31,23 @@
             </p>
         </div>
         <div class="blok__onderwerp">
-            <h3>Auto verzekering</h3>
+            <h3>Banken</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
+                at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
+                ante odio viverra sapien, at lobortis ligua dolor vitea nulla.
+            </p>
+        </div>           
+        <div class="blok__onderwerp">
+            <h3>Belastingen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
+                at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
+                ante odio viverra sapien, at lobortis ligua dolor vitea nulla.
+            </p>
+        </div>           
+        <div class="blok__onderwerp">
+            <h3>Leningen</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
                 at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,

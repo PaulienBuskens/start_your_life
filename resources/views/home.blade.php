@@ -11,6 +11,11 @@
             <p>Wordt deel van de community</p> 
          </div> 
       </a>
+      <a href='/practice'>
+         <div class="rndbtn__home">
+            <p>Stel vraag aan de community</p> 
+         </div> 
+      </a>
    </div>
    <div class="right__home">
       <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
