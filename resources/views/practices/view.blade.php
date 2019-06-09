@@ -5,11 +5,18 @@
         <div class="alert alert-success">{{session('response')}}</div>
     @endif
     
-    <div class="sidenav">
+    <div class="sidenav" id="menuToggle">
+        <input type="checkbox">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        
+        <ul id="menu">
         <a href="/">
             <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
         </a>
-        <ul>
             <a href="/practice">
                 <li>Post Vraag</li>
             </a>
