@@ -821,4 +821,122 @@ footer{
         font-size: 20px;
     }
 
-  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .profile img{
+        width: 50px;
+        height: 50px;
+    }
+    .left__home h2{
+        margin:0;
+    }
+
+    .left__home p{
+        margin-bottom: 4px;
+        margin-top:4px;
+        font-size: 20px;
+    }
+
+    /********** HOME **********/
+
+    .left__home{
+        width: 96%;
+        margin: auto auto;
+        display: block;
+    }
+
+    .left__home p{
+        width: 100%;
+    }
+
+    .left__home .rndbtn__home{
+        width: 100px;
+        height: 100px;
+    }
+
+    .left__home .rndbtn__home p{
+        font-size:13px;
+        padding-left:7px;
+    }
+
+    .right__home{
+        width: 96%;
+    }
+
+    .right__home img{
+        width: 50%;
+        margin: auto auto;
+        padding-left:0;
+    }
+
+    .right__home .btn__form{
+        margin: auto auto;
+        display: block;
+        margin-top:10px;
+    }
+
+    /********** FORM **********/
+
+    .form{
+        width: 96%;
+    }
+
+    .email__form, .password__form, .foto__form{
+        width: 100%;
+        margin-bottom:2%;
+    }
+
+    .form .email__form label, .form .password__form label, .form .foto__form label{
+        display: block;
+        font-size:20px;
+        padding: 2%;
+        width: 150px;
+        margin-bottom: 3%;
+    }
+
+    .form .email__form input, .form .password__form input{
+        display:block;
+        width: 250px;
+    }
+
+    .form .btn__form{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    h1{
+        font-size: 50px;
+    }
+
+    h3{
+        font-size:30px;
+    }
+
+    .categorien{
+        width: 98%;
+    }
+
+    .categorien ul{
+        padding:15px;
+    }
+
+    .categorien li{
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+    .onderwerpen{
+        width: 98%;
+    }
+
+    .onderwerp{
+        width: 280px;
+        height: 280px;
+    }
+}
