@@ -3,11 +3,17 @@
 @section('content')
 
 <h1>Vragen per categorie</h1>   
-    <div class="sidenav">
+    <div class="sidenav" id="menuToggle">
+        <input type="checkbox">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        
         <a href="/">
             <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
         </a>
-        <ul>
+        <ul id="menu">
             <a href="/practice">
                 <li>Post Vraag</li>
             </a>
