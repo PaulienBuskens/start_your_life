@@ -39,7 +39,7 @@
         <div class="alert alert-success">{{session('response')}}</div>
     @endif
 
-    <div class="form">
+    <div class="form practice">
         <form method="POST" action="{{ url('/addPractice') }}" enctype="multipart/form-data">
         @csrf
 

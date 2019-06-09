@@ -28,6 +28,7 @@
 
 /********** GENERAL **********/
 
+
 h1{
     font-family: LargeTitles;
     color: var(--title);
@@ -72,17 +73,23 @@ ul{
 body{
     background-color: var(--background-color);
     margin:0;
+    position: absolute;
 }
 
 footer{
+    position: absolute;
     background-image: url(../images/rebrand/footer.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
-    bottom:0;
+    bottom:-250px;
     right:0;
     left:0;
+}
+
+main{
+    min-height: 500px;
 }
 
 .profile{
