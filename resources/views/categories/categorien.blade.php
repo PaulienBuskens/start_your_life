@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-<h1>Vragen per categorie</h1>   
+ 
     <div class="sidenav" id="menuToggle">
         <input type="checkbox">
 
@@ -30,6 +29,8 @@
         </ul>
     </div>
     <div class="categorien">
+        
+<h1>Vragen per categorie</h1>  
         
         <ul>
             @if(count($categories) > 0)

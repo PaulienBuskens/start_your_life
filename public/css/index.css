@@ -724,4 +724,101 @@ footer{
         width: 100px;
     }
 
+    /********** SEARCH **********/
+
+    .searches{
+        width: 87%;
+    }
+
+    /********** VIEW **********/
+
+    .views{
+        width: 87%;
+        margin:auto auto;
+        display: block;
+    }
+
+    .view{
+        width: 90%;
+    }
+
+    .comment__form{
+        width: 87%;
+    }
+
+    .comment__form .btn__form button{
+        margin-right: 0px;
+    }
+
+    .comments{
+        width: 90%;
+    }
+
+    .comment{
+        width: 100%;
+    }
+
+    /********** FORM **********/
+
+    .form{
+        width: 98%;
+    }
+
+    .email__form, .password__form, .foto__form{
+        width: 80%;
+    }
+
+    .btn__form{
+        width:40%;
+    }
+
+    /********** CATEGORIEN **********/
+
+    .categorien{
+        display: block;
+        width: 95%;
+        margin: auto auto;
+    }
+
+    .categorien li{
+        width: 280px;
+        height: 280px;
+    }
+
+    .categorien a{
+        font-size: 25px;
+    }
+
+    /********** CATEGORIE **********/
+
+    .vragen__categorie{
+        width: 90%;
+        display: block;
+    }
+
+    /********** ONDERWERPEN **********/
+
+    .onderwerpen{
+        width: 90%;
+    }
+
+    .onderwerp{
+        width: 300px;
+        height: 300px;
+    }
+
+    .onderwerp p{
+        font-size: 25px;
+    }
+
+    /********** ONDERWERP **********/
+
+    .onderwerp__onderwerp{
+        width: 87%;
+    }
+
+    .blok__onderwerp p{
+        font-size: 20px;
+    }
+
   }
