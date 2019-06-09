@@ -21,7 +21,7 @@
         </ul>
     </div>
     <h1>Profiel</h1>
-    <div class="form">
+    <div class="form profiel">
         <form method="POST" action="{{ url('/addProfile') }}" enctype="multipart/form-data">
         @csrf
             <div class="email__form">
@@ -40,5 +40,5 @@
                 <button type="submit">Edit Profile</button>
             </div>
         </form>
-    </div>       
+    </div>     
 @endsection
