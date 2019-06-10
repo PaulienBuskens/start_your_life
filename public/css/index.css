@@ -73,11 +73,9 @@ ul{
 body{
     background-color: var(--background-color);
     margin:0;
-    position: absolute;
 }
 
 footer{
-    position: absolute;
     background-image: url(../images/rebrand/footer.png);
     background-position: bottom;
     background-size: cover;
