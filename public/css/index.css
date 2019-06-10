@@ -281,6 +281,12 @@ main{
     box-shadow: 3px 3px 3px rgb(61, 61, 61);
 }
 
+.form .register{
+    width: 17%;
+    margin: auto auto;
+    margin-top:2%;
+}
+
 
 /********** CATEGORIEN **********/
 
@@ -589,6 +595,10 @@ main{
         width: 100px;
     }
 
+    .form .register{
+        width: 26%;
+    }
+
     .onderwerpen{
         padding-left: 250px;
     }
@@ -793,6 +803,10 @@ main{
 
     .btn__form{
         width:40%;
+    }
+
+    .form .register{
+        width: 80%;
     }
 
     /********** CATEGORIEN **********/

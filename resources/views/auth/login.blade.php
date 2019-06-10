@@ -30,5 +30,9 @@
                     </button>
                 </div>
             </form>
+            <div class="register">
+                <a href="/register">Registeer</a>
+            </div>
+           
         </div>
 @endsection
