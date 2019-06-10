@@ -30,7 +30,7 @@
     </div>
     <div class="categorien">
         
-<h1>Vragen per categorie</h1>  
+    <h1>Vragen per categorie</h1>  
         
         <ul>
             @if(count($categories) > 0)

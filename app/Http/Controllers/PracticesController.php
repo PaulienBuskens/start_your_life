@@ -49,7 +49,7 @@ class PracticesController extends Controller
         $practices->category_id = $request->input('category_id');
         $practices->practice_image = '/';
         $practices->save();
-        return redirect('/home')->with('response', 'Practice Added Successfully');
+        return redirect('/categorien')->with('response', 'Vraag succesvol toegevoegd');
 
     }
 

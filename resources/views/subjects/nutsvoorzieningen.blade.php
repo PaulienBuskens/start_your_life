@@ -38,7 +38,7 @@
             </p>
         </div>
         <div class="blok__onderwerp">
-            <h3>Electriciteit</h3>
+            <h3>Elektriciteit</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
                 at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,

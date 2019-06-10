@@ -64,7 +64,7 @@
             </div>
             <div class="btn__form btn-lg">
                 <button type="submit">
-                    Publish Best Practice
+                    Stel je vraag
                 </button>
             </div>
         </form>

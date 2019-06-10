@@ -33,7 +33,7 @@
             <h3>Wassen</h3>
             <p>Hier vindt je enkele handige wastips.</p>
             <ul>
-                <li>Je kan je was best sorteren in wit, zwart en bond.</li>
+                <li>Je kan je was best sorteren in wit, zwart en bont.</li>
                 <li>Zie dat al je zakken leeg zijn.</li>
                 <li>Leg na het wassen een wollen trui plat en hang deze niet op anders kan deze uitrekken.</li>
                 <li>Let er op dat je kleren niet te warm wast anders gaan ze krimpen</li>
@@ -50,9 +50,9 @@
             <p>Hier vindt je enkele handige tips voor het koken en enkele tips voor gerechten.</p>
             <h3>Tips</h3>
             <ul>
-                <li>Zie dat je start met degelijk materiaal zoals scherpe messen, pannen, potten,...</li>
+                <li>Zie dat je start met degelijk materiaal zoals scherpe messen, goede potten en pannen,...</li>
                 <li>Proef je eten tijdens het koken.</li>
-                <li>Start met simple gerechten en maak steeds gevorderde gerechten.</li>
+                <li>Start met simpele gerechten en maak steeds gevorderdere gerechten.</li>
             </ul>
             <h3>Kookboeken en gerechten sites</h3>
             <ul>
