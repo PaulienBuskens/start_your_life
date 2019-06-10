@@ -28,7 +28,7 @@
         </ul>
     </div>
     <div class="onderwerp__onderwerp">
-        <h1>Soliciteren</h1>
+        <h1>Solliciteren</h1>
         <div class="blok__onderwerp">
             <h3>Voorbereiding</h3>
             <p>Je kan je op verschillende manieren voorbereiden op een sollicitatie, hier vindt je enkele van de voornaamste. </p>

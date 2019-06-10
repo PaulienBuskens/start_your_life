@@ -28,7 +28,7 @@
             </a>
         </ul>
     </div>
-<h1>Add Practice</h1>
+<h1>Stel een vraag</h1>
     @if( count($errors) > 0 )
         @foreach($errors->all() as $error)
             <div class="alert alert-danger">{{$error}}</div>
