@@ -911,6 +911,39 @@ main{
         width: 100%;
     }
 
+    .view{
+        width: 98%;
+    }
+
+    .comment__form textarea{
+        width: 98%;
+    }
+
+    .comment__form .btn__form{
+        display: block;
+    }
+
+    .comment__form .btn__form button{
+        float: none;
+        margin-top: 3%;
+    }
+
+    .vragen__categorie{
+        width: 98%;
+    }
+
+    .vraag__categorie{
+        width: 90%;
+    }
+
+    .opties__vragen  ul{
+        padding:0;
+    }
+
+    .opties__vragen a{
+        padding:2%;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
