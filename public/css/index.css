@@ -546,6 +546,26 @@ main{
     font-size:14px;
 }
 
+
+.subonderwerp__onderwerp{
+    width: 70%;
+    margin:auto auto;
+}
+
+.subblok__onderwerp{
+    width: 100%;
+    background: var(--color-1);
+    padding: 2%;
+    border-radius: 10px
+}
+
+.subblok__onderwerp li{
+    font-family: SmallTitles;
+    margin-bottom:2%;
+}
+
+
+
 /********** SEARCH **********/
 
 .searches{

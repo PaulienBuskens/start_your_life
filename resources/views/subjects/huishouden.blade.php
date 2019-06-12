@@ -10,11 +10,13 @@
 </div> 
 <div class="onderwerp__onderwerp">
         <div class="blok__onderwerp">
+            <a href="/huisblok1">
             <h3>Was tips</h3>
             <ul>
                 <li>Je kan je was best sorteren in wit, zwart en bont.</li>
                 <li>Zie dat al je zakken leeg zijn.</li>
             </ul>
+            </a>
         </div>
         <div class="blok__onderwerp">
             <h3>Kooktips</h3>

@@ -4,12 +4,12 @@
 <a href="/">
     <h1>Start Your Life</h1>
 </a>
-
-<h2>Huishouden</h2>
-    <div class="onderwerp__onderwerp">
-        <div class="blok__onderwerp">
-            <h3>Wassen</h3>
-            <p>Hier vindt je enkele handige wastips.</p>
+<div class="band">
+    <h2>Wassen</h2>
+    <p>Hier vindt je enkele handige wastips.</p>
+</div> 
+    <div class="subonderwerp__onderwerp">
+        <div class="subblok__onderwerp">
             <ul>
                 <li>Je kan je was best sorteren in wit, zwart en bont.</li>
                 <li>Zie dat al je zakken leeg zijn.</li>
@@ -23,33 +23,5 @@
                 <li>Doe ritsen en knopen van je kleren dicht zodat ze geen andere kleren beschadigen.</li>
             </ul>
         </div>
-        <div class="blok__onderwerp">
-            <h3>Koken</h3>
-            <p>Hier vindt je enkele handige tips voor het koken en enkele tips voor gerechten.</p>
-            <h3>Tips</h3>
-            <ul>
-                <li>Zie dat je start met degelijk materiaal zoals scherpe messen, goede potten en pannen,...</li>
-                <li>Proef je eten tijdens het koken.</li>
-                <li>Start met simpele gerechten en maak steeds gevorderdere gerechten.</li>
-            </ul>
-            <h3>Kookboeken en gerechten sites</h3>
-            <ul>
-                <li>Kookboek van de boerinnenbond</li>
-                <li>Kookboeken Jeroen Meus</li>
-                <li><a href="https://dagelijksekost.een.be/">Dagelijkse kost</a></li>
-                <li>Kookboeken van Jamie Oliver</li>
-                <li><a href="https://www.jamieoliver.com/recipes/">Jamie Oliver </a></li>
-                <li>Salad in a jar</li>
-            </ul>
-
-        </div>           
-        <div class="blok__onderwerp">
-            <h3>Poetsen</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer pulvinar, purus in finibus volutpat, lorum mi porta quam,
-                at feugiat purus purus nec neque. Sed euismod, massa ut porta tristique,
-                ante odio viverra sapien, at lobortis ligua dolor vitea nulla.
-            </p>
-        </div>           
     </div>
 @endsection

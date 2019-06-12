@@ -44,6 +44,10 @@ Route::get('/huishouden', function(){
     return view('subjects.huishouden');
 });
 
+Route::get('/huisblok1', function(){
+    return view('subjects.huishouden_blok1');
+});
+
 Route::get('/gezondheid', function(){
     return view('subjects.gezondheid');
 });

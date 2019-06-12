@@ -23,8 +23,6 @@
             <p>No best practices available</p>
         @endif
 
-       
-
         <div class="comments">
             <h3>Antwoorden</h3>
 
