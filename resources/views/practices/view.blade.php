@@ -4,9 +4,14 @@
     @if(session('response'))
         <div class="alert alert-success">{{session('response')}}</div>
     @endif
-    
+    <a href="/">
+        <h1>Start Your Life</h1>
+    </a>
+    <div class="band">
+        <h2>Bekijk vraag</h2>
+        <p><br></p>
+    </div> 
     <div class="views">
-        <h1>Bekijk vraag</h1>
         @if(count($practices) > 0)
             @foreach($practices->all() as $practice)
                 <div class="view">
@@ -18,18 +23,10 @@
             <p>No best practices available</p>
         @endif
 
-        <div class="comment__form">
-            <form method="POST" action='{{ url("/comment/{$practice->practices_id}") }}'>
-            {{csrf_field()}}
-                <textarea name="comment" id="comment" cols="50" rows="3" required autofocus></textarea>
-                <div class="btn__form">
-                    <button type="submit">Add Comment</button>
-                </div>
-            </form>
-        </div>
+       
 
         <div class="comments">
-            <h3>Comments</h3>
+            <h3>Antwoorden</h3>
 
             @if(count($comments) > 0)
                 @foreach($comments->all() as $comment)
@@ -41,6 +38,16 @@
             @else 
                 <p>Geen antwoorden gevonden</p>
             @endif
+        </div>
+
+        <div class="comment__form">
+            <form method="POST" action='{{ url("/comment/{$practice->practices_id}") }}'>
+            {{csrf_field()}}
+                <textarea name="comment" id="comment" cols="50" rows="3" required autofocus></textarea>
+                <div class="btn__form">
+                    <button type="submit">Voeg antwoord toe</button>
+                </div>
+            </form>
         </div>
     </div>
 @endsection
