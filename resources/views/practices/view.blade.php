@@ -5,32 +5,6 @@
         <div class="alert alert-success">{{session('response')}}</div>
     @endif
     
-    <div class="sidenav" id="menuToggle">
-        <input type="checkbox">
-
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        
-        <ul id="menu">
-        <a href="/">
-            <img src="{{ asset('images/rebrand/grandmother.png')}}" alt="ask grandmother">
-        </a>
-            <a href="/practice">
-                <li>Post Vraag</li>
-            </a>
-            <a href="/onderwerpen">
-                <li>Info per categorie</li>
-            </a>
-            <a href="/categorien">
-                <li>Vragen per categorie</li>
-            </a>
-            <a href="/categorien">
-                <li>Help andere</li>
-            </a>
-        </ul>
-    </div>
     <div class="views">
         <h1>Bekijk vraag</h1>
         @if(count($practices) > 0)

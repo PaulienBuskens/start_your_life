@@ -12,19 +12,67 @@
 </head>
 <body>
     <div>
-        <nav>
-            <div class="profile">
-                <a href="/profile">
-                    <img src="{{ asset('images/rebrand/profile.png')}}" alt="profiel">
+
+        <div class="sidenav" id="menuToggle">
+        <input type="checkbox">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        
+        <ul id="menu">
+            <div class="left__nav">
+                <h5>Grootmoeder</h5>
+            </div>
+            <div class="mid__nav">
+                <h5>Categorien</h5>
+                <a href="/wonen">
+                    <li>Wonen</li>
+                </a>
+                <a href="/vervoer">
+                    <li>Vervoer</li>
+                </a>
+                <a href="/hobby">
+                    <li>Hobby's</li>
+                </a>
+                <a href="/huishouden">
+                    <li>Huishouden</li>
+                </a>
+                <a href="/gezondheid">
+                    <li>Gezondheid</li>
+                </a>
+                <a href="/financien">
+                    <li>Financien</li>
+                </a>
+                <a href="/solliciteren">
+                    <li>Solliciteren</li>
                 </a>
             </div>
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <div class="right__nav">
+                <h5>Overige</h5>
+                @guest 
+                    <a href="/login">
+                        <li>Login</li>
+                    </a>
+                    <a href="/register">
+                        <li>Register</li>
+                    </a>
+                @else
+                    <a href="/practice">
+                        <li>Post Vraag</li>
+                    </a>
+                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
-        </nav>
+                @endguest
+            </div>
+           
+        </ul>
+        </div>
 
         <main>
             @yield('content')
