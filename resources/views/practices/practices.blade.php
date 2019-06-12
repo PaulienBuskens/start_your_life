@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Stel een vraag</h1>
+    <a href="/">
+        <h1>Start Your Life</h1>
+    </a>
+    <div class="band">
+        <h2>Stel een vraag</h2>
+        <p><br></p>
+    </div> 
     @if( count($errors) > 0 )
         @foreach($errors->all() as $error)
             <div class="alert alert-danger">{{$error}}</div>

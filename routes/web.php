@@ -55,13 +55,6 @@ Route::get('/nutsvoorzieningen', function(){
 Route::get('/categorien', 'PracticesController@categorien');
 
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::group(['middleware' => ['auth']],function(){
-
     Route::get('/practicesoverview', 'PracticesController@home');
     Route::get('/practice', 'PracticesController@practice');
     Route::post('/addPractice', 'PracticesController@addPractice');
@@ -71,7 +64,7 @@ Route::group(['middleware' => ['auth']],function(){
     Route::get('/delete/{id}', 'PracticesController@delete');
     Route::get('/like/{id}', 'PracticesController@like');
     Route::get('/dislike/{id}', 'PracticesController@dislike');
-    Route::post('/comment/{practice_id}', 'PracticesController@comment');
+    
     Route::post('search', 'PracticesController@search');
 
     Route::get('/profile', 'ProfileController@profile');
@@ -81,4 +74,12 @@ Route::group(['middleware' => ['auth']],function(){
     Route::post('/addCategory', 'CategoryController@addCategory');
     Route::get('/category/{id}','PracticesController@category');
 
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']],function(){
+    Route::post('/comment/{practice_id}', 'PracticesController@comment');
 });

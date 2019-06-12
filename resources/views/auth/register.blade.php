@@ -2,7 +2,13 @@
 
 @section('content')
 
-    <h1>Register</h1>
+    <a href="/">
+        <h1>Start Your Life</h1>
+    </a>
+    <div class="band">
+        <h2>Register</h2>
+        <p><br></p>
+    </div> 
     <div class="form">
         <form method="POST" action="{{ route('register') }}">
         @csrf

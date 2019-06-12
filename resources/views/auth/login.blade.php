@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <h1>Login</h1>
+    <a href="/">
+        <h1>Start Your Life</h1>
+    </a>
+    <div class="band">
+        <h2>Login</h2>
+        <p><br></p>
+    </div> 
         <div class="form">
             <form method="POST" action="{{ route('login') }}">
             @csrf

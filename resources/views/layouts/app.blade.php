@@ -24,6 +24,12 @@
         <ul id="menu">
             <div class="left__nav">
                 <h5>Grootmoeder</h5>
+                <a href="">
+                    <li>Over grootmoeder</li>
+                </a>
+                <a href="">
+                    <li>Personal assistants</li>
+                </a>
             </div>
             <div class="mid__nav">
                 <h5>Categorien</h5>
@@ -60,7 +66,7 @@
                     </a>
                 @else
                     <a href="/practice">
-                        <li>Post Vraag</li>
+                        <li>Stel een vraag</li>
                     </a>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
