@@ -106,6 +106,7 @@ main{
     min-height: 500px;
 }
 
+
 .band{
     background-color:var(--color-3);
     padding-bottom:2%;
@@ -177,7 +178,7 @@ main{
     margin: -100px 0 0 -90px;
     padding: 50px;
     padding-top: 125px;
-    background: #ededed;
+    background: #edededcf;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -638,6 +639,29 @@ main{
 }
 
 @media screen and (max-width: 1350px) and (min-width: 1024px){
+
+    /********** HOME **********/
+
+    .left__home p{
+        font-size: 20px;
+    }
+
+    .mid__home p{
+        font-size: 16px;
+    }
+
+    .right__home p{
+        font-size: 20px;
+    }
+
+    .right__home div{
+        width: 39%;
+    }
+
+    .right__home div:nth-child(3){
+        width: 92%;
+    }
+
     .onderwerp{
         width: 150px;
         height: 150px;
@@ -672,19 +696,29 @@ main{
 
 @media only screen and (max-width: 1024px) and (min-width:900px) {
 
-    .profile img{
-        width: 75px;
-        height: 75px;
+
+    /********** HOME **********/
+
+    .left__home p{
+        font-size: 16.5px;
     }
 
-    .right__home input{
-        width: 300px;
-        height: 40px;
+    .mid__home p{
+        font-size: 13.5px;
     }
 
-    .right__home img{
-        padding-left:50px;
+    .right__home p{
+        font-size: 17px;
     }
+
+    .right__home div{
+        width: 39%;
+    }
+
+    .right__home div:nth-child(3){
+        width: 92%;
+    }
+
 
     .form{
         width: 80%;
@@ -750,33 +784,50 @@ main{
   @media screen and (max-width: 900px) {
     
 
+    
     /********** HOME **********/
 
     .left__home{
-        float:none;
-        padding-left:0;
-        width: 60%;
         display: block;
-        margin: auto auto;
+        width: 80%;
     }
 
     .left__home p{
-        width: 90%;
+        font-size: 20px;
+    }
+
+    .mid__home{
+        display: block;
+        width: 78%;
+        margin: auto auto;
+    }
+
+    .mid__home div{
+        padding-bottom:0%;
+        padding-top: 0%;
+    }
+
+    .mid__home p{
+        font-size: 20px;
     }
 
     .right__home{
         display: block;
-        width: 70%;
-        margin:auto auto;
+        width: 78%;
+        margin: auto auto;
+        margin-top:2%;
     }
 
-    .right__home img{
-        width: 60%;
-        padding-left:50px;
+    .right__home p{
+        font-size: 20px;
     }
 
-    .right__home .btn__form{
-        width: 100px;
+    .right__home div{
+        width: 40%;
+    }
+
+    .right__home div:nth-child(3){
+        width: 92%;
     }
 
     /********** SEARCH **********/
@@ -885,56 +936,51 @@ main{
 
 @media screen and (max-width: 420px) {
 
-    .profile img{
-        width: 50px;
-        height: 50px;
-    }
-    .left__home h2{
-        margin:0;
-    }
-
-    .left__home p{
-        margin-bottom: 4px;
-        margin-top:4px;
-        font-size: 20px;
-    }
-
     /********** HOME **********/
 
     .left__home{
-        width: 96%;
-        margin: auto auto;
         display: block;
+        width: 90%;
+        margin: auto auto;
+
     }
 
     .left__home p{
-        width: 100%;
+        font-size: 20px;
     }
 
-    .left__home .rndbtn__home{
-        width: 100px;
-        height: 100px;
+    .mid__home{
+        display: block;
+        width: 90%;
+        margin: auto auto;
     }
 
-    .left__home .rndbtn__home p{
-        font-size:13px;
-        padding-left:7px;
+    .mid__home div{
+        padding-bottom:0%;
+        padding-top: 0%;
+    }
+
+    .mid__home p{
+        font-size: 20px;
     }
 
     .right__home{
-        width: 96%;
-    }
-
-    .right__home img{
-        width: 50%;
-        margin: auto auto;
-        padding-left:0;
-    }
-
-    .right__home .btn__form{
-        margin: auto auto;
         display: block;
-        margin-top:10px;
+        width: 90%;
+        margin: auto auto;
+        margin-top:2%;
+    }
+
+    .right__home p{
+        font-size: 18px;
+    }
+
+    .right__home div{
+        width: 39%;
+    }
+
+    .right__home div:nth-child(3){
+        width: 92%;
     }
 
     /********** FORM **********/

@@ -47,6 +47,12 @@ Route::get('/huishouden', function(){
 Route::get('/huisblok1', function(){
     return view('subjects.huishouden_blok1');
 });
+Route::get('/huisblok2', function(){
+    return view('subjects.huishouden_blok2');
+});
+Route::get('/huisblok3', function(){
+    return view('subjects.huishouden_blok3');
+});
 
 Route::get('/gezondheid', function(){
     return view('subjects.gezondheid');
