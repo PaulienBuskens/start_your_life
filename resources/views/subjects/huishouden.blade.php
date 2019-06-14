@@ -26,10 +26,10 @@
                 </ul>
             </a>
         </div>  
-        <div class="blok__onderwerp">
+        <div class="blok__onderwerp blok__midlarge">
             <a href="/category/6">
-            <h3>Bekijk vragen van andere gebruikers</h3>
-            <p><br></p>
+                <h3>Bekijk vragen van andere gebruikers</h3>
+                <p></p>
             </a>
         </div>           
         <div class="blok__onderwerp">

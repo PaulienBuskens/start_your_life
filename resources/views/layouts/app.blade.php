@@ -48,10 +48,10 @@
                 <a href="/gezondheid">
                     <li>Gezondheid</li>
                 </a>
-                <a href="/financien">
+                <a href="/finacien">
                     <li>Financien</li>
                 </a>
-                <a href="/solliciteren">
+                <a href="/soliciteren">
                     <li>Solliciteren</li>
                 </a>
             </div>

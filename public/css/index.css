@@ -547,6 +547,21 @@ main{
     font-size:14px;
 }
 
+.blok__onderwerp__small h3{
+    font-size: 32px;
+}
+
+.blok__large{
+    padding-top:66px;
+}
+
+.blok__midlarge{
+    padding-top:54px;
+}
+
+.blok__mid{
+    padding-top:40px;
+}
 
 .subonderwerp__onderwerp{
     width: 70%;

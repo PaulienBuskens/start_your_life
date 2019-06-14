@@ -1,22 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
+
+<a href="/">
+    <h1>Start Your Life</h1>
+</a>
+<div class="band">
+    <h2>Hobby's </h2>
+    <p>In deze sectie vind je verschillende mogelijke hobby's.</p>
+</div> 
     <div class="onderwerp__onderwerp">
-        <h1>Hobby's</h1>
         <div class="blok__onderwerp">
-            <h3>Sportclubs</h3>
-            <p>Doordat sportclubs meestal op een vaste dag in de week samenkomen is dit een makkelijke hobby om in te plannen. Ook het sociaal contact helpt om mensen te leren kennen als je in een nieuwe gemeente zou wonen.
-            </p>
+            <a href="/hobby1">
+                <h3>Sportclubs</h3>
+                <p>Sportclubs zijn altijd handig en leuk als je een vaste dag in de week kan vrijmaken.</p>
+            </a>
         </div>
         <div class="blok__onderwerp">
-            <h3>Fitness</h3>
-            <p>Fitness is handig voor mensen die geen tijd kunnen vrijmaken op vaste momenten. Doordat je bij de fitness op de meeste momenten binnen kan is dit een ideale oplossing.
-            </p>
-        </div>           
+            <a href="/hobby2">
+                <h3>Fitnesses</h3>
+                <p>Indien je geen vaste moment kan vrijmaken om te sporten is de fitness heel handig.</p>
+            </a>
+        </div>
         <div class="blok__onderwerp">
-            <h3>Vrijwilligerswerk</h3>
-            <p>Wil je een hobby maar je hebt geen zin om te sporten dan kan je altijd vrijwilligerswerk doen. Er zullen genoeg organisaties zijn in je gemeente die altijd openstaan voor nieuwe vrijwilligers.
-            </p>
-        </div>           
+            <a href="/category/5">
+            <h3>Bekijk vragen van andere gebruikers</h3>
+            <p><br></p>
+            </a>
+        </div> 
+        <div class="blok__onderwerp blok__onderwerp__small">
+            <a href="/hobby3">
+                <h3>Vrijwilligers werk</h3>
+                <p>Geen zin in sport maar wel om mensen te helpen?</p>
+            </a>
+        </div>                  
     </div>
 @endsection

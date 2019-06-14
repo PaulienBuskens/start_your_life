@@ -24,6 +24,22 @@ Route::get('/wonen', function(){
     return view('subjects.wonen');
 });
 
+Route::get('/wonen1', function(){
+    return view('subsubjects.wonen.wonen_blok1');
+});
+
+Route::get('/wonen2', function(){
+    return view('subsubjects.wonen.wonen_blok2');
+});
+
+Route::get('/wonen3', function(){
+    return view('subsubjects.wonen.wonen_blok3');
+});
+
+Route::get('/wonen4', function(){
+    return view('subsubjects.wonen.wonen_blok4');
+});
+
 Route::get('/soliciteren', function(){
     return view('subjects.soliciteren');
 });
@@ -36,8 +52,32 @@ Route::get('/vervoer', function(){
     return view('subjects.vervoer');
 });
 
+Route::get('/vervoer1', function(){
+    return view('subsubjects.vervoer.vervoer_blok1');
+});
+
+Route::get('/vervoer2', function(){
+    return view('subsubjects.vervoer.vervoer_blok2');
+});
+
+Route::get('/vervoer3', function(){
+    return view('subsubjects.vervoer.vervoer_blok3');
+});
+
 Route::get('/hobby', function(){
     return view('subjects.hobby');
+});
+
+Route::get('/hobby1', function(){
+    return view('subsubjects.hobby.hobby_blok1');
+});
+
+Route::get('/hobby2', function(){
+    return view('subsubjects.hobby.hobby_blok2');
+});
+
+Route::get('/hobby3', function(){
+    return view('subsubjects.hobby.hobby_blok3');
 });
 
 Route::get('/huishouden', function(){
@@ -45,17 +85,31 @@ Route::get('/huishouden', function(){
 });
 
 Route::get('/huisblok1', function(){
-    return view('subjects.huishouden_blok1');
+    return view('subsubjects.huishouden.huishouden_blok1');
 });
+
 Route::get('/huisblok2', function(){
-    return view('subjects.huishouden_blok2');
+    return view('subsubjects.huishouden.huishouden_blok2');
 });
+
 Route::get('/huisblok3', function(){
-    return view('subjects.huishouden_blok3');
+    return view('subsubjects.huishouden.huishouden_blok3');
 });
 
 Route::get('/gezondheid', function(){
     return view('subjects.gezondheid');
+});
+
+Route::get('/gezond1', function(){
+    return view('subsubjects.gezondheid.gezond_blok1');
+});
+
+Route::get('/gezond2', function(){
+    return view('subsubjects.gezondheid.gezond_blok2');
+});
+
+Route::get('/gezond3', function(){
+    return view('subsubjects.gezondheid.gezond_blok3');
 });
 
 Route::get('/nutsvoorzieningen', function(){
