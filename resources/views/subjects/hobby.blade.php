@@ -24,8 +24,8 @@
         </div>
         <div class="blok__onderwerp">
             <a href="/category/5">
-            <h3>Bekijk vragen van andere gebruikers</h3>
-            <p><br></p>
+                <h3>Bekijk vragen van andere gebruikers</h3>
+                <p><br></p>
             </a>
         </div> 
         <div class="blok__onderwerp blok__onderwerp__small">

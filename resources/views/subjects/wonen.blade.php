@@ -37,7 +37,7 @@
         <div class="blok__onderwerp">
             <a href="/wonen4">
                 <h3>Immo websites</h3>
-                <p>Er zijn heel veel verschillende Immo websites. Hier vindt je er enkele.</p>
+                <p>Er zijn heel veel verschillende Immo websites.</p>
             </a>
         </div>           
     </div>

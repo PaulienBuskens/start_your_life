@@ -149,12 +149,6 @@ Route::get('/gezond3', function(){
     return view('subsubjects.gezondheid.gezond_blok3');
 });
 
-Route::get('/nutsvoorzieningen', function(){
-    return view('subjects.nutsvoorzieningen');
-});
-
-Route::get('/categorien', 'PracticesController@categorien');
-
 
     Route::get('/practicesoverview', 'PracticesController@home');
     Route::get('/practice', 'PracticesController@practice');

@@ -346,45 +346,6 @@ main{
 }
 
 
-/********** CATEGORIEN **********/
-
-.categorien{
-   /* display: inline-block;*/
-   margin:auto auto;
-    width: 79%;
-}
-
-.categorien ul{
-    list-style-type: none;
-}
-
-.categorien a{
-    color:black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.categorien li{
-    background-color: var(--color-1);
-    width: 220px;
-    height: 220px;
-    display: inline-block;
-    border-radius: 100%;
-    margin-left: 3%;
-    margin-bottom:3%;
-    box-shadow: 3px 3px 3px rgb(61, 61, 61);
-}
-
-.categorien li:nth-child(odd){
-    background-color: var(--color-2);
-}
-
-.categorien li p{
-    margin-top:47%;
-    font-family: SmallTitles;
-    text-align: center;
-}
-
 /********** CATEGORIE **********/
 
 .vragen__categorie{
@@ -485,30 +446,6 @@ main{
     font-size:10px;
 }
 
-/********** ONDERWERPEN **********/
-
-.onderwerpen{
-    width: 79%;
-    margin:auto auto;
-}
-
-.onderwerp{
-    background-color:var(--color-1);
-    width: 220px;
-    height: 220px;
-    border-radius:100%;
-    display:inline-block;
-    margin-left:3%;
-    margin-bottom:3%;
-    box-shadow: 3px 3px 3px rgb(61, 61, 61);
-}
-
-.onderwerp p{
-    font-size: 20px;
-    text-align: center;
-    margin-top:47%;
-}
-
 /********** ONDERWERP **********/
 
 .onderwerp__onderwerp{
@@ -584,8 +521,6 @@ main{
     margin-bottom:2%;
 }
 
-
-
 /********** SEARCH **********/
 
 .searchbar{
@@ -647,22 +582,9 @@ main{
 
 @media screen and (max-width: 1500px) and (min-width: 1350px){
 
-    .onderwerp{
-        width: 190px;
-        height: 190px;
-    }
-
-    .onderwerp p{
-        font-size:18px;
-    }
-
-    .onderwerp__onderwerp{
-        padding-left:150px;
-    }
-
-    .categorien li{
-        width: 190px;
-        height: 190px;
+    .right__home p{
+        font-size: 23px;
+        padding-top:7.5%;
     }
 
     .comment__form .btn__form button{
@@ -709,10 +631,6 @@ main{
         height: 150px;
     }
 
-    .onderwerp__onderwerp{
-        padding-left:150px;
-    }
-
     .comment__form .btn__form button{
         margin-right: 58px;
         font-size:18px;
@@ -727,17 +645,10 @@ main{
         width: 100px;
     }
 
-    .categorien li{
-        width: 150px;
-        height: 150px;
-    }
 }
-
-
-/********** TABLET **********/
+/********** TABLET LANDSCAPE**********/
 
 @media only screen and (max-width: 1024px) and (min-width:900px) {
-
 
     /********** HOME **********/
 
@@ -761,7 +672,6 @@ main{
         width: 92%;
     }
 
-
     .form{
         width: 80%;
         padding-left:100px;
@@ -775,47 +685,32 @@ main{
         width: 26%;
     }
 
-    .onderwerpen{
-        padding-left: 250px;
+    .blok__onderwerp{
+        width: 28%;
     }
 
-    .onderwerp{
-        width: 150px;
-        height: 150px;
+    .blok__onderwerp:nth-child(3) h3{
+        font-size:30px;
+        padding-top:4%;
     }
 
-    .onderwerp p{
-        font-size: 15px;
-    }
-
-    .onderwerp__onderwerp{
-        padding-left: 200px;
-    }
-
-    .categorien{
-        padding-left:250px;
-    }
-
-    .categorien ul{
-        padding: 0;
-    }
-
-    .categorien a{
-        font-size: 15px;
-    }
-
-    .categorien li{
-        width: 150px;
-        height: 150px
+    .blok__large{
+        padding-top:22px;
     }
 
     .vragen__categorie{
-        padding-left:60px;
+        width: 90%;
+        margin:auto auto;
+    } 
+
+    .vraag__categorie{
+        width: 44%;
+        float:none;
     }
 
     .comment__form .btn__form button{
-        margin-right: 0;
-        font-size:18px;
+        margin-right:0;
+        font-size:13px;
     }
 
     .searches{
@@ -824,8 +719,6 @@ main{
   }
 
   @media screen and (max-width: 900px) {
-    
-
     
     /********** HOME **********/
 
@@ -870,6 +763,24 @@ main{
 
     .right__home div:nth-child(3){
         width: 92%;
+    }
+
+    /********** CATEGORIEN **********/
+
+    .onderwerp__onderwerp{
+        width: 90%;
+    }
+
+    .blok__onderwerp{
+        width: 44%;
+    }
+
+    .blok__onderwerp:nth-child(odd){
+        margin-right: 2%;
+    }
+
+    .blok__large{
+        padding-top:34px;
     }
 
     /********** SEARCH **********/
@@ -924,55 +835,12 @@ main{
         width: 80%;
     }
 
-    /********** CATEGORIEN **********/
-
-    .categorien{
-        display: block;
-        width: 98%;
-        margin: auto auto;
-    }
-
-    .categorien li{
-        width: 280px;
-        height: 280px;
-    }
-
-    .categorien a{
-        font-size: 25px;
-    }
-
     /********** CATEGORIE **********/
 
     .vragen__categorie{
         width: 90%;
         display: block;
     }
-
-    /********** ONDERWERPEN **********/
-
-    .onderwerpen{
-        width: 90%;
-    }
-
-    .onderwerp{
-        width: 300px;
-        height: 300px;
-    }
-
-    .onderwerp p{
-        font-size: 25px;
-    }
-
-    /********** ONDERWERP **********/
-
-    .onderwerp__onderwerp{
-        width: 87%;
-    }
-
-    .blok__onderwerp p{
-        font-size: 20px;
-    }
-
 
 }
 
@@ -1086,10 +954,6 @@ main{
         padding:2%;
     }
 
-    .categorien{
-        width: 90%;
-    }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -1102,25 +966,4 @@ main{
         font-size:30px;
     }
 
-    .categorien{
-        width: 80%;
-    }
-
-    .categorien ul{
-        padding:15px;
-    }
-
-    .categorien li{
-        margin: 0;
-        margin-bottom: 3%;
-    }
-
-    .onderwerpen{
-        width: 80%;
-    }
-
-    .onderwerp{
-        width: 280px;
-        height: 280px;
-    }
 }
