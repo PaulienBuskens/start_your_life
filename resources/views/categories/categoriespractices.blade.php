@@ -12,8 +12,16 @@
             <br>Stel dan <a href="/practice">HIER</a> je vraag.
         </p>
     </div> 
-
-        <div class="vragen__categorie">
+    <div class="searchbar">
+        <form method="POST" action='{{ url("/search") }}'>
+            {{ csrf_field() }}
+            <input type="text" name="search" placeholder="Search for ...">
+            <span>
+                <button type="submit" class="btn__form">VRAAG</button>
+            </span>
+        </form>
+    </div>
+    <div class="vragen__categorie">
         @if(count($practices) > 0)
             @foreach($practices->all() as $practice)
                 <div class="vraag__categorie">

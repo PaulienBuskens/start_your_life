@@ -164,11 +164,9 @@ class PracticesController extends Controller
     }
 
     public function search(Request $request){
-        $user_id = Auth::user()->id;
-        $profile = Profile::find($user_id);
         $keywords = $request->input('search');
         $practices = Practice::where('practice_body', 'LIKE' , '%' .$keywords. '%')->get();
-        return view('practices.searchpractices', ['profile' => $profile, 'practices' => $practices]);
+        return view('practices.searchpractices', ['practices' => $practices]);
     }
 
     public function categorien(){

@@ -588,6 +588,29 @@ main{
 
 /********** SEARCH **********/
 
+.searchbar{
+    width: 30%;
+    margin: auto auto;
+    margin-bottom: 4%;
+}
+
+.searchbar input{
+    width: 70%;
+    border: 2px solid;
+    border-radius: 10px;
+    padding:2%;
+}
+
+.searchbar button{
+    width: 20%;
+    background: var(--color-2);
+    border-radius:10px;
+    border:none;
+    font-family: Smalltitles;
+    font-size: 16px;
+    padding:2%;
+}
+
 .searches{
     width: 50%; 
     margin:auto auto;

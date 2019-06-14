@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    
+<a href="/">
+    <h1>Start Your Life</h1>
+</a>
+<div class="band">
+    <h2>Zoek resultaten</h2>
+</div> 
     <div class="searches">
-    <h1>Zoek resultaten</h1>
         @if(count($practices) > 0)
             @foreach($practices->all() as $practice)
                 <div class="search">
