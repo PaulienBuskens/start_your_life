@@ -551,6 +551,10 @@ main{
     font-size: 32px;
 }
 
+.blok__Xlarge{
+    padding-top:100px;
+}
+
 .blok__large{
     padding-top:66px;
 }

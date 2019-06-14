@@ -44,9 +44,46 @@ Route::get('/soliciteren', function(){
     return view('subjects.soliciteren');
 });
 
+Route::get('/solliciteren1', function(){
+    return view('subsubjects.solliciteren.solliciteren_blok1');
+});
+
+Route::get('/solliciteren2', function(){
+    return view('subsubjects.solliciteren.solliciteren_blok2');
+});
+
 Route::get('/finacien', function(){
     return view('subjects.financien');
 });
+
+Route::get('/financien1', function(){
+    return view('subsubjects.financien.financien_blok1');
+});
+
+Route::get('/financien2', function(){
+    return view('subsubjects.financien.financien_blok2');
+});
+
+Route::get('/financien3', function(){
+    return view('subsubjects.financien.financien_blok3');
+});
+
+Route::get('/financien4', function(){
+    return view('subsubjects.financien.financien_blok4');
+});
+
+Route::get('/financien5', function(){
+    return view('subsubjects.financien.financien_blok5');
+});
+
+Route::get('/financien6', function(){
+    return view('subsubjects.financien.financien_blok6');
+});
+
+Route::get('/financien7', function(){
+    return view('subsubjects.financien.financien_blok7');
+});
+
 
 Route::get('/vervoer', function(){
     return view('subjects.vervoer');
