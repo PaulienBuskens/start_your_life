@@ -181,4 +181,13 @@ class PracticesController extends Controller
         $categories = Category::all();
         return view('categories.categorien', ['categories'=>$categories]);
     }
+
+    public function vragen(){
+        $loggedin_user = Auth::user()->id;
+        $practices = DB::table('practices')
+            ->select('practices.*')
+            ->where(['user_id' => $loggedin_user])
+            ->get();
+        return view('vragen', ['practices' => $practices]);
+    }
 }

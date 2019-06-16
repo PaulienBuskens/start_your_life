@@ -356,7 +356,7 @@ main{
 .vraag__categorie{
     width: 20%;
     display: inline-block;
-    float:left;
+    /*float:left;*/
     min-height: 100px;
     background-color:var(--color-1);
     border-radius: 10px;

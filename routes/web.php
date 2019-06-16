@@ -178,6 +178,8 @@ Route::group(['middleware' => ['auth']],function(){
     Route::get('/like/{practice_id}', 'PracticesController@like');
     Route::get('/dislike/{practice_id}', 'PracticesController@dislike');
 
+    Route::get('/vragen', 'PracticesController@vragen');
+
     Route::get('/edit/{id}', 'PracticesController@edit');
     Route::post('/editPractice/{id}','PracticesController@editPractice');
     Route::get('/delete/{id}', 'PracticesController@delete');

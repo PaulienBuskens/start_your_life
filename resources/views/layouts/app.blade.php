@@ -65,6 +65,9 @@
                     <a href="/practice">
                         <li>Stel een vraag</li>
                     </a>
+                    <a href="/vragen">
+                        <li>Mijn vragen</li>
+                    </a>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
             </a>
