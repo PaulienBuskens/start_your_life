@@ -578,6 +578,47 @@ main{
     color:grey;
 }
 
+.about{
+    width: 90%;
+    margin: auto auto;
+    margin-bottom:5%;
+}
+
+.left__about{
+    width: 30%;
+    display: inline-block;
+}
+
+.left__about img{
+    width: 70%;
+}
+
+.right__about{
+    width: 65%;
+    display: inline-block;
+    background: var(--color-1);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.right__about p{
+    font-size: 30px;
+}
+
+.personal{
+    width: 80%;
+    margin:auto auto;
+}
+
+.personal__left, .personal__right{
+    display: inline-block;
+    width: 45%;
+}
+
+.personal__left img{
+    width:40%;
+}
+
 /********** SMALL SCREENS AND IPAD PRO **********/
 
 @media screen and (max-width: 1500px) and (min-width: 1350px){

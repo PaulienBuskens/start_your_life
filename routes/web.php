@@ -149,24 +149,22 @@ Route::get('/gezond3', function(){
     return view('subsubjects.gezondheid.gezond_blok3');
 });
 
+Route::get('/about', function(){
+    return view('about');
+});
 
-    Route::get('/practicesoverview', 'PracticesController@home');
-    Route::get('/practice', 'PracticesController@practice');
-    Route::post('/addPractice', 'PracticesController@addPractice');
-    
-    Route::get('/edit/{id}', 'PracticesController@edit');
-    Route::post('/editPractice/{id}','PracticesController@editPractice');
-    Route::get('/delete/{id}', 'PracticesController@delete');
-    
-    
-    Route::post('search', 'PracticesController@search');
 
-    Route::get('/profile', 'ProfileController@profile');
-    Route::post('/addProfile', 'ProfileController@addProfile');
 
-    Route::get('/category', 'CategoryController@category');
-    Route::post('/addCategory', 'CategoryController@addCategory');
-    Route::get('/category/{id}','PracticesController@category');
+Route::get('/practicesoverview', 'PracticesController@home');
+Route::get('/practice', 'PracticesController@practice');
+Route::post('/addPractice', 'PracticesController@addPractice');
+Route::post('search', 'PracticesController@search');
+
+Route::get('/profile', 'ProfileController@profile');
+Route::post('/addProfile', 'ProfileController@addProfile');
+
+Route::get('/category', 'CategoryController@category');
+Route::get('/category/{id}','PracticesController@category');
 
 
 
@@ -179,4 +177,10 @@ Route::group(['middleware' => ['auth']],function(){
     Route::post('/comment/{practice_id}', 'PracticesController@comment');
     Route::get('/like/{practice_id}', 'PracticesController@like');
     Route::get('/dislike/{practice_id}', 'PracticesController@dislike');
+
+    Route::get('/edit/{id}', 'PracticesController@edit');
+    Route::post('/editPractice/{id}','PracticesController@editPractice');
+    Route::get('/delete/{id}', 'PracticesController@delete');
+    
+    Route::post('/addCategory', 'CategoryController@addCategory');
 });
