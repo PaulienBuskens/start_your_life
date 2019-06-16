@@ -153,12 +153,11 @@ Route::get('/gezond3', function(){
     Route::get('/practicesoverview', 'PracticesController@home');
     Route::get('/practice', 'PracticesController@practice');
     Route::post('/addPractice', 'PracticesController@addPractice');
-    Route::get('/view/{practice_id}', 'PracticesController@view');
+    
     Route::get('/edit/{id}', 'PracticesController@edit');
     Route::post('/editPractice/{id}','PracticesController@editPractice');
     Route::get('/delete/{id}', 'PracticesController@delete');
-    Route::get('/like/{id}', 'PracticesController@like');
-    Route::get('/dislike/{id}', 'PracticesController@dislike');
+    
     
     Route::post('search', 'PracticesController@search');
 
@@ -176,5 +175,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => ['auth']],function(){
+    Route::get('/view/{practice_id}', 'PracticesController@view');
     Route::post('/comment/{practice_id}', 'PracticesController@comment');
+    Route::get('/like/{practice_id}', 'PracticesController@like');
+    Route::get('/dislike/{practice_id}', 'PracticesController@dislike');
 });

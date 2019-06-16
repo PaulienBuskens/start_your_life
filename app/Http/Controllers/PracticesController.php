@@ -55,13 +55,21 @@ class PracticesController extends Controller
 
     public function view($practice_id){
         $practices = Practice::where('practices_id', '=' , $practice_id)->get();
+        $likePractice = DB::table('likes')
+            ->select('practice_id')
+            ->where('practice_id', '=' , $practice_id)
+            ->get()->count();
+        $dislikePractice = DB::table('dislikes')
+            ->select('practice_id')
+            ->where('practice_id', '=' , $practice_id)
+            ->get()->count();
         $comments = DB::table('users')
             ->join('comments','users.id', '=', 'comments.user_id')
             ->join('practices', 'comments.practice_id', '=' , 'practices_id')
             ->select('users.name', 'comments.*')
             ->where(['practices.practices_id'=>$practice_id])
             ->get();
-        return view('practices.view', ['practices'=> $practices, 'comments' => $comments]);
+        return view('practices.view', ['practices'=> $practices, 'comments' => $comments, 'likePractice' => $likePractice, 'dislikePractice' => $dislikePractice]);
     }
 
     public function edit($practice_id){
@@ -116,7 +124,7 @@ class PracticesController extends Controller
     public function like($id){
         $loggedin_user = Auth::user()->id;
         $like_user = Like::where(['user_id'=>$loggedin_user, 'practice_id'=>$id])->first();
-        //check if user had already liked the post
+        //check if user had already liked the post;
         if(empty($like_user->user_id)){
             $user_id = Auth::user()->id;
             $email = Auth::user()->email;

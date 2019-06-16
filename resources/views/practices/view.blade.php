@@ -17,6 +17,18 @@
                 <div class="view">
                     <h3>{{$practice->practice_title}}</h3>
                     <p>{{$practice->practice_body}}</p>
+                    <ul>
+                        <li role="presentation">
+                            <a href='{{ url("/like/{$practice->practices_id}")}}'>
+                                <span>Like ({{$likePractice}})</span> 
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href='{{ url("/dislike/{$practice->practices_id}")}}'>
+                                <span>Dislike ({{$dislikePractice}})</span> 
+                            </a>
+                        </li>    
+                    </ul>
                 </div>
             @endforeach
         @else
@@ -31,6 +43,7 @@
                     <div class="comment">
                         <p>{{ $comment->comment }}</p>
                         <p>Posted by: {{ $comment->name }}</p>
+                        
                     </div>
                 @endforeach
             @else 
