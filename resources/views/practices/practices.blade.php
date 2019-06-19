@@ -26,7 +26,7 @@
                 <label for="practice_title">Title</label>
                 <input id="practice_title" type="input" name="practice_title" value="{{ old('practice_title') }}" required autofocus>
             </div>
-            <div class="email__form">
+            <div class="body__form">
                 <label for="practice_body">Body</label>
                 <textarea id="practice_body" rows="7" name="practice_body" required></textarea>
             </div>

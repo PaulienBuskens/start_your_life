@@ -286,13 +286,13 @@ main{
     margin:auto auto;
 }
 
-.email__form, .password__form, .foto__form{
+.email__form, .password__form, .body__form, .foto__form{
     margin:auto auto;
-    width: 65%;
+    width: 70%;
     margin-bottom:2%;
 }
 
-.form .email__form label, .form .password__form label, .form .foto__form label{
+.form .email__form label, .body__form label, .form .password__form label, .form .foto__form label{
     background-color: var(--color-1);
     font-family: SmallTitles;
     display: inline-block;
@@ -306,11 +306,16 @@ main{
 }
 
 .form .email__form input, .form .password__form input{
-    display:inline;
-    width: 400px;
-    height: 33px;
+    display:inline-block;
+    padding:2%;
     border:2px solid;
-    border-radius: 6px;
+    border-radius: 10px;
+}
+
+.body__form textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:2%;
 }
 
 .btn__form{
@@ -401,6 +406,27 @@ main{
     font-size: 25px;
 }
 
+.view li{
+    display: inline;
+    margin-right: 2%;
+}
+
+.view li:first-child:hover{
+    background-color:var(--color-5);
+    border-radius:10px;
+    padding:1%;
+}
+
+.view li:nth-child(2):hover{
+    background-color:var(--color-3);
+    border-radius:10px;
+    padding:1%;
+}
+
+.view span{
+    font-family: SmallTitles;
+}
+
 .comment__form{
     width: 74%;
     margin:auto auto;
@@ -410,6 +436,7 @@ main{
     display: inline-block;
     border: 2px solid;
     border-radius: 10px;
+    padding:2%;
 }
 
 .comment__form .btn__form{
@@ -619,7 +646,101 @@ main{
     width:40%;
 }
 
-/********** SMALL SCREENS AND IPAD PRO **********/
+
+
+
+@media screen and (min-width: 1700px){
+
+    .band h2{
+        font-size:80px;
+    }
+
+    .band p{
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+    .mid__home div{
+        padding-bottom:12%;
+        padding-top: 2%;
+    }
+
+    .mid__home p{
+        font-size:23px;
+    }
+
+    .right__home div:nth-child(2) p{
+        font-size:26.5px;
+        padding-top: 10%;
+    }
+
+    .container{
+        min-height: 522px;
+    }
+
+    .blok__onderwerp h3{
+        font-size: 35px;
+    }
+
+    .blok__onderwerp p{
+        font-size:21px;
+    }
+
+    .blok__onderwerp:nth-child(3){
+        padding-top:33px;
+        padding-bottom:40px;
+    }
+
+    .blok__extra p{
+        padding-top:26px;
+    }
+
+    .blok__large {
+        padding-top:33px;
+        padding-bottom:40px;
+    }
+
+    .blok__onderwerp li{
+        font-size:20px;
+    }
+
+    .blok__midlarge h3{
+        padding-top:32px;
+    }
+
+    .blok__mid h3{
+        padding-top:10px;
+    }
+
+    .blok__Xlarge h3{
+        padding-top:32px;
+    }
+
+    .form .email__form label, .body__form label, .form .password__form label, .form .foto__form label{
+        font-size:22px;
+        width: 200px;
+    }
+
+    .form .email__form input, .form .password__form input, .body__form textarea{
+        width: 500px;
+    }
+
+    .form button{
+        width: 200px;
+    }
+
+    .comment__form .btn__form button{
+        margin-right: 330px;
+    }
+
+    footer{
+        height: 310px;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1500px) and (min-width: 1350px){
 

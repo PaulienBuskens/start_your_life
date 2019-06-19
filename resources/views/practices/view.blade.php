@@ -54,7 +54,7 @@
         <div class="comment__form">
             <form method="POST" action='{{ url("/comment/{$practice->practices_id}") }}'>
             {{csrf_field()}}
-                <textarea name="comment" id="comment" cols="50" rows="3" required autofocus></textarea>
+                <textarea name="comment" id="comment" cols="50" rows="3" required></textarea>
                 <div class="btn__form">
                     <button type="submit">Voeg antwoord toe</button>
                 </div>

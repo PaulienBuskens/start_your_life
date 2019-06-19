@@ -22,7 +22,7 @@
                 <p>Indien je geen vaste moment kan vrijmaken om te sporten is de fitness heel handig.</p>
             </a>
         </div>
-        <div class="blok__onderwerp">
+        <div class="blok__onderwerp blok__extra">
             <a href="/category/5">
                 <h3>Bekijk vragen van andere gebruikers</h3>
                 <p><br></p>

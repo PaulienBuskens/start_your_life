@@ -10,7 +10,7 @@
 <div class="onderwerp__onderwerp">
         <div class="blok__onderwerp">
             <a href="/solliciteren1">
-                <h3>Voor-bereiding</h3>
+                <h3 class="tekst__small">Voorbereiding</h3>
                 <p>Je kan je op verschillende manieren voorbereiden op een sollicitatie.</p>
             </a>
         </div>
