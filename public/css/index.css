@@ -759,7 +759,7 @@ main{
         padding-left:100px;
     }
 
-    .form .email__form label, .form .password__form label{
+    .form .email__form label, .body__form label, .form .password__form label{
         width: 100px;
     }
 }
@@ -803,7 +803,7 @@ main{
         padding-left:100px;
     }
 
-    .form .email__form label, .form .password__form label{
+    .form .email__form label, .body__form label, .form .password__form label{
         width: 100px;
     }
 
@@ -839,7 +839,7 @@ main{
         padding-left:100px;
     }
 
-    .form .email__form label, .form .password__form label{
+    .form .email__form label, .body__form label, .form .password__form label{
         width: 100px;
     }
 
@@ -1000,7 +1000,7 @@ main{
         width: 98%;
     }
 
-    .email__form, .password__form, .foto__form{
+    .email__form, .password__form, .foto__form, .body__form{
         width: 80%;
     }
 
@@ -1099,12 +1099,12 @@ main{
         width: 96%;
     }
 
-    .email__form, .password__form, .foto__form{
+    .email__form, .password__form, .foto__form, .body__form{
         width: 100%;
         margin-bottom:2%;
     }
 
-    .form .email__form label, .form .password__form label, .form .foto__form label{
+    .form .email__form label,.form .body__form label, .form .password__form label, .form .foto__form label{
         display: block;
         font-size:20px;
         padding: 2%;
